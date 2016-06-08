@@ -1,0 +1,15 @@
+D:\Google Project\Live.Log.Extractor\Live.Log.Extractor.Domain\bin\Debug\Live.Log.Extractor.Domain.dll
+D:\Google Project\Live.Log.Extractor\Live.Log.Extractor.Domain\bin\Debug\Live.Log.Extractor.Domain.pdb
+D:\Google Project\Live.Log.Extractor\Live.Log.Extractor.Domain\obj\Debug\ResolveAssemblyReference.cache
+D:\Google Project\Live.Log.Extractor\Live.Log.Extractor.Domain\obj\Debug\Live.Log.Extractor.Domain.dll
+D:\Google Project\Live.Log.Extractor\Live.Log.Extractor.Domain\obj\Debug\Live.Log.Extractor.Domain.pdb
+C:\Live.Log.Extractor\Live.Log.Extractor.Domain\bin\Debug\Live.Log.Extractor.Domain.dll
+C:\Live.Log.Extractor\Live.Log.Extractor.Domain\bin\Debug\Live.Log.Extractor.Domain.pdb
+C:\Live.Log.Extractor\Live.Log.Extractor.Domain\obj\Debug\ResolveAssemblyReference.cache
+C:\Live.Log.Extractor\Live.Log.Extractor.Domain\obj\Debug\Live.Log.Extractor.Domain.dll
+C:\Live.Log.Extractor\Live.Log.Extractor.Domain\obj\Debug\Live.Log.Extractor.Domain.pdb
+C:\Tools\Live.Log.Extractor\Live.Log.Extractor.Domain\bin\Debug\Live.Log.Extractor.Domain.dll
+C:\Tools\Live.Log.Extractor\Live.Log.Extractor.Domain\bin\Debug\Live.Log.Extractor.Domain.pdb
+C:\Tools\Live.Log.Extractor\Live.Log.Extractor.Domain\obj\Debug\Live.Log.Extractor.Domain.csprojResolveAssemblyReference.cache
+C:\Tools\Live.Log.Extractor\Live.Log.Extractor.Domain\obj\Debug\Live.Log.Extractor.Domain.dll
+C:\Tools\Live.Log.Extractor\Live.Log.Extractor.Domain\obj\Debug\Live.Log.Extractor.Domain.pdb

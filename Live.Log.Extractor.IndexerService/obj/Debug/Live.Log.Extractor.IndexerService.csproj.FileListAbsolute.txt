@@ -1,0 +1,22 @@
+D:\Google Project\Live.Log.Extractor\Live.Log.Extractor.IndexerService\bin\Debug\Live.Log.Extractor.IndexerService.dll.config
+D:\Google Project\Live.Log.Extractor\Live.Log.Extractor.IndexerService\bin\Debug\Live.Log.Extractor.IndexerService.dll
+D:\Google Project\Live.Log.Extractor\Live.Log.Extractor.IndexerService\bin\Debug\Live.Log.Extractor.IndexerService.pdb
+D:\Google Project\Live.Log.Extractor\Live.Log.Extractor.IndexerService\bin\Debug\Live.Log.Extractor.Domain.dll
+D:\Google Project\Live.Log.Extractor\Live.Log.Extractor.IndexerService\bin\Debug\Lucene.Net.dll
+D:\Google Project\Live.Log.Extractor\Live.Log.Extractor.IndexerService\bin\Debug\Live.Log.Extractor.Domain.pdb
+D:\Google Project\Live.Log.Extractor\Live.Log.Extractor.IndexerService\bin\Debug\Lucene.Net.xml
+D:\Google Project\Live.Log.Extractor\Live.Log.Extractor.IndexerService\obj\Debug\ResolveAssemblyReference.cache
+D:\Google Project\Live.Log.Extractor\Live.Log.Extractor.IndexerService\obj\Debug\Live.Log.Extractor.IndexerService.dll
+D:\Google Project\Live.Log.Extractor\Live.Log.Extractor.IndexerService\obj\Debug\Live.Log.Extractor.IndexerService.pdb
+C:\Live.Log.Extractor\Live.Log.Extractor.IndexerService\bin\Debug\Live.Log.Extractor.IndexerService.dll.config
+C:\Live.Log.Extractor\Live.Log.Extractor.IndexerService\bin\Debug\Live.Log.Extractor.IndexerService.dll
+C:\Live.Log.Extractor\Live.Log.Extractor.IndexerService\bin\Debug\Live.Log.Extractor.IndexerService.pdb
+C:\Live.Log.Extractor\Live.Log.Extractor.IndexerService\bin\Debug\Ionic.Zip.dll
+C:\Live.Log.Extractor\Live.Log.Extractor.IndexerService\bin\Debug\Live.Log.Extractor.Domain.dll
+C:\Live.Log.Extractor\Live.Log.Extractor.IndexerService\bin\Debug\Lucene.Net.dll
+C:\Live.Log.Extractor\Live.Log.Extractor.IndexerService\bin\Debug\Live.Log.Extractor.Domain.pdb
+C:\Live.Log.Extractor\Live.Log.Extractor.IndexerService\bin\Debug\Ionic.Zip.xml
+C:\Live.Log.Extractor\Live.Log.Extractor.IndexerService\bin\Debug\Lucene.Net.xml
+C:\Live.Log.Extractor\Live.Log.Extractor.IndexerService\obj\Debug\ResolveAssemblyReference.cache
+C:\Live.Log.Extractor\Live.Log.Extractor.IndexerService\obj\Debug\Live.Log.Extractor.IndexerService.dll
+C:\Live.Log.Extractor\Live.Log.Extractor.IndexerService\obj\Debug\Live.Log.Extractor.IndexerService.pdb

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Live.Log.Extractor.IndexerService" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Live.Log.Extractor.IndexerService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="ProductType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="MyPolicy" />
+      <xs:enumeration value="Motor" />
+      <xs:enumeration value="Home" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="ProductType" nillable="true" type="tns:ProductType" />
+  <xs:complexType name="ArrayOfIndexInformation">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="IndexInformation" nillable="true" type="tns:IndexInformation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfIndexInformation" nillable="true" type="tns:ArrayOfIndexInformation" />
+  <xs:complexType name="IndexInformation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Date" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FilePath" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="IndexInformation" nillable="true" type="tns:IndexInformation" />
+</xs:schema>

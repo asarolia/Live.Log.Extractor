@@ -1,0 +1,16 @@
+<publishData>
+  <publishTarget publishUrl="C:\WCF\">
+    <file relUrl="bin/Lucene.Net.dll" publishTime="07/12/2012 17:39:34" />
+    <file relUrl="Resources/Product.xml" publishTime="07/16/2012 20:14:12" />
+    <file relUrl="bin/Lucene.Net.xml" publishTime="07/12/2012 17:39:34" />
+    <file relUrl="bin/Live.Log.Extractor.IndexerService.pdb" publishTime="11/22/2012 18:33:27" />
+    <file relUrl="bin/Live.Log.Extractor.IndexerService.dll.config" publishTime="11/22/2012 16:41:03" />
+    <file relUrl="bin/Live.Log.Extractor.IndexerService.dll" publishTime="11/22/2012 18:33:27" />
+    <file relUrl="Web.config" publishTime="11/22/2012 16:41:03" />
+    <file relUrl="bin/Ionic.Zip.xml" publishTime="08/20/2012 09:29:44" />
+    <file relUrl="bin/Live.Log.Extractor.Domain.pdb" publishTime="08/03/2012 14:37:05" />
+    <file relUrl="bin/Live.Log.Extractor.Domain.dll" publishTime="08/03/2012 14:37:06" />
+    <file relUrl="Live.Log.Extractor.IndexerService.IndexingService.svc" publishTime="11/22/2012 18:33:28" />
+    <file relUrl="bin/Ionic.Zip.dll" publishTime="08/20/2012 09:29:44" />
+  </publishTarget>
+</publishData>

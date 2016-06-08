@@ -1,0 +1,14 @@
+﻿@model Live.Log.Extractor.Web.Models.CartViewModel
+@{
+Layout = null;
+}
+@if (Model != null && !string.IsNullOrEmpty(Model.UserId))
+{
+    <div id="cart">
+    <span class="caption">
+    USER :
+    @Model.UserId.ToUpper()
+    </span>
+    <b>@Html.ActionLink("Logout", "Index", "Cart")</b>
+    </div>
+}

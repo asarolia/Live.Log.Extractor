@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4FFE00D6-148B-40D4-969C-D6D2D513041A}"
+	ProjectSection(SolutionItems) = preProject
+		Live.Log.Extractor.vsmdi = Live.Log.Extractor.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Live.Log.Extractor.Web", "Live.Log.Extractor.Web\Live.Log.Extractor.Web.csproj", "{31F7DAB6-73DC-4565-AFF4-EE0C7C931AE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Live.Log.Extractor.Domain", "Live.Log.Extractor.Domain\Live.Log.Extractor.Domain.csproj", "{2767DFE8-4CBD-4F7C-A10F-099F85EAC002}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Live.Log.Extractor.IndexerService", "Live.Log.Extractor.IndexerService\Live.Log.Extractor.IndexerService.csproj", "{9161F197-1635-4062-9587-D51C7D45F019}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Live.Log.Extractor.IndexerService.Test", "Live.Log.Extractor.IndexerService.Test\Live.Log.Extractor.IndexerService.Test.csproj", "{C0801967-B68E-46B2-8561-B049FDB35783}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31F7DAB6-73DC-4565-AFF4-EE0C7C931AE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31F7DAB6-73DC-4565-AFF4-EE0C7C931AE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31F7DAB6-73DC-4565-AFF4-EE0C7C931AE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31F7DAB6-73DC-4565-AFF4-EE0C7C931AE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2767DFE8-4CBD-4F7C-A10F-099F85EAC002}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2767DFE8-4CBD-4F7C-A10F-099F85EAC002}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2767DFE8-4CBD-4F7C-A10F-099F85EAC002}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2767DFE8-4CBD-4F7C-A10F-099F85EAC002}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9161F197-1635-4062-9587-D51C7D45F019}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9161F197-1635-4062-9587-D51C7D45F019}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9161F197-1635-4062-9587-D51C7D45F019}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9161F197-1635-4062-9587-D51C7D45F019}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0801967-B68E-46B2-8561-B049FDB35783}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0801967-B68E-46B2-8561-B049FDB35783}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0801967-B68E-46B2-8561-B049FDB35783}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0801967-B68E-46B2-8561-B049FDB35783}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Live.Log.Extractor.vsmdi
+	EndGlobalSection
+EndGlobal

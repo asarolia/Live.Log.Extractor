@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="292caf60-e336-4c30-884b-e16f05858f09" name="rkumar214@CSCINDAE748892 2014-09-19 14:15:25" runUser="ASIAPAC\rkumar214" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="9dffd9a1-1540-4630-9962-d287012919fd">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="rkumar214_CSCINDAE748892 2014-09-19 14_15_25">
+      <DeploymentItem filename="C:\Live.Log.Extractor\Live.Log.Extractor.IndexerService\bin\Debug\Live.Log.Extractor.IndexerService.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-09-19T14:15:25.4736516+05:30" queuing="2014-09-19T14:15:52.3703410+05:30" start="2014-09-19T14:15:54.3965436+05:30" finish="2014-09-19T14:16:10.2231261+05:30" />
+  <ResultSummary outcome="Failed">
+    <Counters total="2" executed="2" passed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="CreatingIndexTest" storage="c:\live.log.extractor\live.log.extractor.indexerservice.test\bin\debug\live.log.extractor.indexerservice.test.dll" id="40295f08-8548-22d6-89bc-091932f7e91f">
+      <Execution id="e733d2ac-ffaf-4bb8-ada1-cc8d205e195b" />
+      <TestMethod codeBase="C:/Live.Log.Extractor/Live.Log.Extractor.IndexerService.Test/bin/Debug/Live.Log.Extractor.IndexerService.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Live.Log.Extractor.IndexerService.Test.IndexerServiceUnitTest, Live.Log.Extractor.IndexerService.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CreatingIndexTest" />
+    </UnitTest>
+    <UnitTest name="DecompressFileTest" storage="c:\live.log.extractor\live.log.extractor.indexerservice.test\bin\debug\live.log.extractor.indexerservice.test.dll" id="bf7d00cc-f7e2-2afa-7347-630bbb628470">
+      <Execution id="683f623a-8cf1-4307-afac-f6f776c29984" />
+      <TestMethod codeBase="C:/Live.Log.Extractor/Live.Log.Extractor.IndexerService.Test/bin/Debug/Live.Log.Extractor.IndexerService.Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Live.Log.Extractor.IndexerService.Test.IndexerServiceUnitTest, Live.Log.Extractor.IndexerService.Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DecompressFileTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="40295f08-8548-22d6-89bc-091932f7e91f" executionId="e733d2ac-ffaf-4bb8-ada1-cc8d205e195b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bf7d00cc-f7e2-2afa-7347-630bbb628470" executionId="683f623a-8cf1-4307-afac-f6f776c29984" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="e733d2ac-ffaf-4bb8-ada1-cc8d205e195b" testId="40295f08-8548-22d6-89bc-091932f7e91f" testName="CreatingIndexTest" computerName="CSCINDAE748892" duration="00:00:03.7326795" startTime="2014-09-19T14:15:55.1626202+05:30" endTime="2014-09-19T14:16:08.7679806+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e733d2ac-ffaf-4bb8-ada1-cc8d205e195b">
+    </UnitTestResult>
+    <UnitTestResult executionId="683f623a-8cf1-4307-afac-f6f776c29984" testId="bf7d00cc-f7e2-2afa-7347-630bbb628470" testName="DecompressFileTest" computerName="CSCINDAE748892" duration="00:00:01.0944305" startTime="2014-09-19T14:16:08.7749813+05:30" endTime="2014-09-19T14:16:09.8730911+05:30" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="683f623a-8cf1-4307-afac-f6f776c29984">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Live.Log.Extractor.IndexerService.Test.IndexerServiceUnitTest.DecompressFileTest threw exception: 
+System.IO.DirectoryNotFoundException: Could not find a part of the path 'C:\apps\Logs Decompressed\'.</Message>
+          <StackTrace>    at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   at System.IO.FileSystemEnumerableIterator`1..ctor(String path, String originalUserPath, String searchPattern, SearchOption searchOption, SearchResultHandler`1 resultHandler)
+   at System.IO.DirectoryInfo.InternalGetFiles(String searchPattern, SearchOption searchOption)
+   at System.IO.DirectoryInfo.GetFiles(String searchPattern)
+   at Live.Log.Extractor.IndexerService.Test.IndexerServiceUnitTest.DecompressFileTest() in C:\Live.Log.Extractor\Live.Log.Extractor.IndexerService.Test\IndexerServiceUnitTest.cs:line 34
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

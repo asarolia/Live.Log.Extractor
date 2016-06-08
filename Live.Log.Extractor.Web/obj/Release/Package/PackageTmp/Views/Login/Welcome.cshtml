@@ -1,0 +1,72 @@
+﻿@{
+    ViewBag.Title = "Log Extract Tool";
+}
+<div style="width:100% ; height:100%">
+    <div style="width:100%; height:auto;padding:5px;margin-left:20px;">
+        <h2 style="color: #5C5C5C; font-family: 'Microsoft Sans Serif';">
+            ApSELF Features</h2>
+        <p>
+            ApSELF is created to extract Exceed Error table, Wrapper-EDD log tables, E-Channel Logs and Print Logs</p>
+        <p>
+            Following are the current capabilities of ApSELF</p>
+    </div>
+    <div  style="width:100%; height:auto;float:left; padding:5px; margin-left:20px;margin-bottom:20px;">
+            <div style="width:303px; height:84px; padding:1px; float:left; background-color: #FFF;">
+            <a href='@Url.Action("Index", "Exceed")'><img src="@Url.Content("~/Content/images/exceed2.png")" border="0" alt="Exceed Logs"/></a>
+            </div>
+            <div style=" padding-left:14px; float:left;">
+        <ul>
+            <li>To give a snapshot of any given detail error code.</li>
+            <li>Display top five errors in a particular exceed region in last six months.</li>
+            <li>Display number of instances in total for that error</li>
+            <li>Display last ten timestaps and count in last six months.</li>
+            <li>Display Earliest and Latest time for that error.</li>
+        </ul>
+        </div>
+    </div><br /><br /><br /><br />
+    <div style="width:100%; height:auto;float:left;padding:5px; margin-left:20px; margin-bottom:20px;">
+             <div style="width:300px; height:84px; padding:1px; float:left; background-color: #FFF;">
+				<a href='@Url.Action("Index", "EDD")'><img src="@Url.Content("~/Content/images/edd2.png")" border="0" alt="EDD Logs"/></a>
+            </div>
+            <div style=" padding-left:14px; float:left;">
+				<ul>
+					<li>To access all input and output logs for exceed – edd communication<br> for a given policy
+                    id or policy number.</li>
+					<li>Display EDD I/O messages in readable format.</li>
+					<li>Display EDD I/O messages in exceed database format.</li>
+				</ul>
+			</div>
+    </div><br /><br /><br /><br />
+    <div style="width:100%; height:auto;float:left;padding:5px; margin-left:20px; margin-bottom:20px;">
+             <div style="width:303px; height:84px; padding:1px; float:left; background-color: #FFF;">
+				<a href='@Url.Action("Index", "Echannel")'><img src="@Url.Content("~/Content/images/echannel2.png")" border="0" alt="E-Channel Logs"/></a>
+            </div>
+            <div style=" padding-left:14px; float:left;">
+				<ul>
+					<li>To access all request and response message for EChannel for a given
+                    <br/>session, 
+                    <br/>quote/policy, 
+                    <br/>client id 
+                    <br/> for Home, Motor and My Policy appication.</li>
+				</ul>
+			</div>
+    </div><br /><br /><br /><br />
+     <div style="width:100%; height:auto;float:left;padding:5px; margin-left:20px; margin-bottom:20px;">
+             <div style="width:303px; height:84px; padding:1px; float:left; background-color: #FFF;">
+				<a href='@Url.Action("Index", "Print")'><img src="@Url.Content("~/Content/images/Print_Log2.png")" border="0" alt="Print Logs"/></a>
+            </div>
+            <div style=" padding-left:14px; float:left;">
+				<ul>
+					<li>To access XML, which is created to send to dialogue                     
+                    <br/>for document printing.                      
+                    </li>
+				</ul>
+			</div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('ul#saturday').children('li:nth-child(1)').addClass('selectedMenu');
+        $('ul#saturday').children('li:nth-child(1)').children('a').css('color', '#FFF');
+    });
+</script>

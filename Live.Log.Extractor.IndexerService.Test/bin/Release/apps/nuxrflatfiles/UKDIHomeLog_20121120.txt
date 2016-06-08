@@ -1,0 +1,550 @@
+-----Begin of Error logged at 02:44:50.384----- 
+     --------Exception Message------------------
+     System.InvalidOperationException: MI Logging transaction codes not defined for 'ServiceName=getBankDetailsConsumer'.
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.GetAFServiceTransactionCode(IAFServiceAdaptor adaptor, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 312
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.CreateNew(Object sender, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 110
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateMainMiBeforeInvoke(Object sender) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 275
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateServiceInvokingLoggers(Object sender) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 485
+-----End of Error logged ---------------------------------
+-----Begin of Error logged at 02:44:51.103-----  for session e4gfkldvr5vb0gnh5sdzrigu
+     IP     :  86.3.14.188
+     --------Exception Message------------------
+     WrapMultipleInternalException: Exceptions in background transaction/error logging.
+ ---> 2 Inner exceptions found --- 
+ --- Inner exception 1--- 
+ ---> System.InvalidOperationException: MI Logging transaction codes not defined for 'ServiceName=getBankDetailsConsumer'.
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.GetAFServiceTransactionCode(IAFServiceAdaptor adaptor, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 312
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.CreateNew(Object sender, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 110
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateMainMiBeforeInvoke(Object sender) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 275
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateServiceInvokingLoggers(Object sender) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 485
+   --- End of inner exception stack trace ---
+ --- Inner exception 2--- 
+ ---> System.InvalidOperationException: MI Logging transaction codes not defined for 'ServiceName=getBankDetailsConsumer'.
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.GetAFServiceTransactionCode(IAFServiceAdaptor adaptor, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 312
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.CreateNew(Object sender, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 110
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateMainMiAfterInvoke(Object sender, Exception exception) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 288
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateServiceInvokeSuccessLoggers(Object sender) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 517
+   --- End of inner exception stack trace ---
+
+-----End of Error logged ---------------------------------
+-----Begin of Error logged at 07:10:10.679----- 
+     --------Exception Message------------------
+     System.InvalidOperationException: MI Logging transaction codes not defined for 'ServiceName=getBankDetailsConsumer'.
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.GetAFServiceTransactionCode(IAFServiceAdaptor adaptor, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 312
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.CreateNew(Object sender, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 110
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateMainMiBeforeInvoke(Object sender) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 275
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateServiceInvokingLoggers(Object sender) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 485
+-----End of Error logged ---------------------------------
+-----Begin of Error logged at 07:10:11.304-----  for session cpukrj2udiuzxfmofofgao4n
+     IP     :  195.144.135.189
+     --------Exception Message------------------
+     WrapMultipleInternalException: Exceptions in background transaction/error logging.
+ ---> 2 Inner exceptions found --- 
+ --- Inner exception 1--- 
+ ---> System.InvalidOperationException: MI Logging transaction codes not defined for 'ServiceName=getBankDetailsConsumer'.
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.GetAFServiceTransactionCode(IAFServiceAdaptor adaptor, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 312
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.CreateNew(Object sender, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 110
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateMainMiBeforeInvoke(Object sender) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 275
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateServiceInvokingLoggers(Object sender) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 485
+   --- End of inner exception stack trace ---
+ --- Inner exception 2--- 
+ ---> System.InvalidOperationException: MI Logging transaction codes not defined for 'ServiceName=getBankDetailsConsumer'.
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.GetAFServiceTransactionCode(IAFServiceAdaptor adaptor, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 312
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.CreateNew(Object sender, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 110
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateMainMiAfterInvoke(Object sender, Exception exception) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 288
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateServiceInvokeSuccessLoggers(Object sender) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 517
+   --- End of inner exception stack trace ---
+
+-----End of Error logged ---------------------------------
+-----Begin of Error logged at 08:07:47.144-----  for session a33qrdgjmbz02psv0evzhn0v
+     IP     :  81.141.68.10
+     Service Name:  RetrieveHomeNBQuote
+     URL    :  http://10.14.76.230:9080/commfw/services/RetrieveHomeNBQuote?wsdl
+     --------Request------------------
+     <?xml version="1.0" encoding="utf-8"?><soapenv:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"><soapenv:Body><ns1:processWebService soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns1="commfw-soap-broker"><RetrieveHomeNBQuoteRq xmlns:dp="dp.norwich-union.com"><Exceed><SessionKey Val="a33qrdgjmbz02psv0evzhn0v" /><WebService_Profile Val=" " /><WebService_Requester Val="NUDINTER" /><WebService_Switch Val="" /></Exceed><NUPolicyLocate><PolicyLocate_PolNumber Val="QTE 300094180" /><PolicyLocate_PrimaryFunction Val="POL BY POLNBR" /><PolicyLocate_QuoteNumber Val="1" /><PolicyLocate_Switch Val="Q" /><PolicyLocate_TransactionSeqNbr Val="1" /></NUPolicyLocate></RetrieveHomeNBQuoteRq></ns1:processWebService></soapenv:Body></soapenv:Envelope>
+     --------Response------------------
+     <RetrieveHomeNBQuoteRs><Errors><BusinessError><BusinessError_FailedModule Val="PXUOPWL1" /><BusinessError_FailedTableOrFile Val="WEB_LOC_POL_FILTER_BPO" /><BusinessError_FailedColumnOrField Val="NO ROW FETCH" /><BusinessError_Code Val="UWS_POLNFD" /><BusinessError_Text Val="There are no matching records, please try again." /></BusinessError></Errors><Policy xmlns:dp="dp.norwich-union.com"><Policy_AccountsStopInd Val="" /><Policy_CancelRewriteId Val="" /><Policy_Commission Val="" /><Policy_CompanyChannel Val="" /><Policy_ConversionFlag Val="" /><Policy_ConversionType Val="" /><Policy_CurrentTermEndDate Val="" /><Policy_CurrentTermStartDate Val="" /><Policy_DateQuoted Val="" /><Policy_GiScore Val="" /><Policy_InceptionDate Val="" /><Policy_PreviousInsurer Val="" /><Policy_PreviousPaymentMethod Val="" /><Policy_ProposedPaymentMethod Val="" /><Policy_ProductCode Val="" /><Policy_ReasonAmended Val="" /><Policy_RenewalStopIndicator Val="" /><Policy_SchemeVariant Val="" /><Policy_Source Val="" /><Policy_SourceCode Val="" /><Policy_TransactionDate Val="" /><Policy_ProductSegment Val="" /><Policy_ProductRatingSegment Val="" /><dp:Policy_BranchNbr Val="" /><dp:Policy_CustomerCoverNoteDate Val="" /><dp:Policy_DealerCoverNoteDate Val="" /><dp:Policy_GuaranteeInd Val="" /><dp:Policy_DealerRef Val="" /><dp:Policy_Agency Val="" /><dp:Policy_PolicyNumber Val="" /><dp:Policy_QuoteSequenceNumber Val="" /><dp:Policy_TransactionSequenceNumber Val="" /><Policy_PrintInd Val="" /><dp:Policy_PrintDespatchCode Val="" /><Policy_IssueDate Val="" /></Policy></RetrieveHomeNBQuoteRs>
+-----End of Error logged ---------------------------------
+-----Begin of Error logged at 08:08:01.972-----  for session a33qrdgjmbz02psv0evzhn0v
+     IP     :  81.141.68.10
+     Service Name:  RetrieveHomeNBQuote
+     URL    :  http://10.14.76.230:9080/commfw/services/RetrieveHomeNBQuote?wsdl
+     --------Request------------------
+     <?xml version="1.0" encoding="utf-8"?><soapenv:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"><soapenv:Body><ns1:processWebService soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns1="commfw-soap-broker"><RetrieveHomeNBQuoteRq xmlns:dp="dp.norwich-union.com"><Exceed><SessionKey Val="a33qrdgjmbz02psv0evzhn0v" /><WebService_Profile Val=" " /><WebService_Requester Val="NUDINTER" /><WebService_Switch Val="" /></Exceed><NUPolicyLocate><PolicyLocate_PolNumber Val="QTE 300094180" /><PolicyLocate_PrimaryFunction Val="POL BY POLNBR" /><PolicyLocate_QuoteNumber Val="1" /><PolicyLocate_Switch Val="Q" /><PolicyLocate_TransactionSeqNbr Val="1" /></NUPolicyLocate></RetrieveHomeNBQuoteRq></ns1:processWebService></soapenv:Body></soapenv:Envelope>
+     --------Response------------------
+     <RetrieveHomeNBQuoteRs><Errors><BusinessError><BusinessError_FailedModule Val="PXUOPWL1" /><BusinessError_FailedTableOrFile Val="WEB_LOC_POL_FILTER_BPO" /><BusinessError_FailedColumnOrField Val="NO ROW FETCH" /><BusinessError_Code Val="UWS_POLNFD" /><BusinessError_Text Val="There are no matching records, please try again." /></BusinessError></Errors><Policy xmlns:dp="dp.norwich-union.com"><Policy_AccountsStopInd Val="" /><Policy_CancelRewriteId Val="" /><Policy_Commission Val="" /><Policy_CompanyChannel Val="" /><Policy_ConversionFlag Val="" /><Policy_ConversionType Val="" /><Policy_CurrentTermEndDate Val="" /><Policy_CurrentTermStartDate Val="" /><Policy_DateQuoted Val="" /><Policy_GiScore Val="" /><Policy_InceptionDate Val="" /><Policy_PreviousInsurer Val="" /><Policy_PreviousPaymentMethod Val="" /><Policy_ProposedPaymentMethod Val="" /><Policy_ProductCode Val="" /><Policy_ReasonAmended Val="" /><Policy_RenewalStopIndicator Val="" /><Policy_SchemeVariant Val="" /><Policy_Source Val="" /><Policy_SourceCode Val="" /><Policy_TransactionDate Val="" /><Policy_ProductSegment Val="" /><Policy_ProductRatingSegment Val="" /><dp:Policy_BranchNbr Val="" /><dp:Policy_CustomerCoverNoteDate Val="" /><dp:Policy_DealerCoverNoteDate Val="" /><dp:Policy_GuaranteeInd Val="" /><dp:Policy_DealerRef Val="" /><dp:Policy_Agency Val="" /><dp:Policy_PolicyNumber Val="" /><dp:Policy_QuoteSequenceNumber Val="" /><dp:Policy_TransactionSequenceNumber Val="" /><Policy_PrintInd Val="" /><dp:Policy_PrintDespatchCode Val="" /><Policy_IssueDate Val="" /></Policy></RetrieveHomeNBQuoteRs>
+-----End of Error logged ---------------------------------
+-----Begin of Error logged at 08:18:50.624----- 
+     --------Exception Message------------------
+     System.InvalidOperationException: MI Logging transaction codes not defined for 'ServiceName=getBankDetailsConsumer'.
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.GetAFServiceTransactionCode(IAFServiceAdaptor adaptor, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 312
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.CreateNew(Object sender, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 110
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateMainMiBeforeInvoke(Object sender) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 275
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateServiceInvokingLoggers(Object sender) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 485
+-----End of Error logged ---------------------------------
+-----Begin of Error logged at 08:18:50.811-----  for session lrw1xa0mfkv5e0kfm5q21zkz
+     IP     :  86.180.160.187
+     --------Exception Message------------------
+     WrapMultipleInternalException: Exceptions in background transaction/error logging.
+ ---> 2 Inner exceptions found --- 
+ --- Inner exception 1--- 
+ ---> System.InvalidOperationException: MI Logging transaction codes not defined for 'ServiceName=getBankDetailsConsumer'.
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.GetAFServiceTransactionCode(IAFServiceAdaptor adaptor, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 312
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.CreateNew(Object sender, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 110
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateMainMiBeforeInvoke(Object sender) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 275
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateServiceInvokingLoggers(Object sender) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 485
+   --- End of inner exception stack trace ---
+ --- Inner exception 2--- 
+ ---> System.InvalidOperationException: MI Logging transaction codes not defined for 'ServiceName=getBankDetailsConsumer'.
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.GetAFServiceTransactionCode(IAFServiceAdaptor adaptor, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 312
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.CreateNew(Object sender, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 110
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateMainMiAfterInvoke(Object sender, Exception exception) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 288
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateServiceInvokeSuccessLoggers(Object sender) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 517
+   --- End of inner exception stack trace ---
+
+-----End of Error logged ---------------------------------
+-----Begin of Error logged at 08:52:26.736-----  for session 3mogfmfhbi1cte4upxxesd1r
+     IP     :  82.25.151.176
+     --------Exception Message------------------
+     Aviva.UKGI.Common.Exception.PostCodeException: Address not found in LookupAddress service- Post Code = 'P07 7TD' House =:''
+-----End of Error logged ---------------------------------
+-----Begin of Error logged at 08:52:48.143-----  for session 3mogfmfhbi1cte4upxxesd1r
+     IP     :  82.25.151.176
+     --------Exception Message------------------
+     Aviva.UKGI.Common.Exception.PostCodeException: Address not found in LookupAddress service- Post Code = 'P07 7TD' House =:''
+-----End of Error logged ---------------------------------
+-----Begin of Error logged at 10:09:58.268----- 
+     --------Exception Message------------------
+     System.InvalidOperationException: MI Logging transaction codes not defined for 'ServiceName=getBankDetailsConsumer'.
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.GetAFServiceTransactionCode(IAFServiceAdaptor adaptor, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 312
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.CreateNew(Object sender, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 110
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateMainMiBeforeInvoke(Object sender) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 275
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateServiceInvokingLoggers(Object sender) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 485
+-----End of Error logged ---------------------------------
+-----Begin of Error logged at 10:09:58.424-----  for session 4dvzf2fxnvamlkrzlnvbkqy4
+     IP     :  86.179.2.182
+     --------Exception Message------------------
+     WrapMultipleInternalException: Exceptions in background transaction/error logging.
+ ---> 2 Inner exceptions found --- 
+ --- Inner exception 1--- 
+ ---> System.InvalidOperationException: MI Logging transaction codes not defined for 'ServiceName=getBankDetailsConsumer'.
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.GetAFServiceTransactionCode(IAFServiceAdaptor adaptor, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 312
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.CreateNew(Object sender, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 110
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateMainMiBeforeInvoke(Object sender) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 275
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateServiceInvokingLoggers(Object sender) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 485
+   --- End of inner exception stack trace ---
+ --- Inner exception 2--- 
+ ---> System.InvalidOperationException: MI Logging transaction codes not defined for 'ServiceName=getBankDetailsConsumer'.
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.GetAFServiceTransactionCode(IAFServiceAdaptor adaptor, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 312
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.CreateNew(Object sender, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 110
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateMainMiAfterInvoke(Object sender, Exception exception) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 288
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateServiceInvokeSuccessLoggers(Object sender) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 517
+   --- End of inner exception stack trace ---
+
+-----End of Error logged ---------------------------------
+-----Begin of Error logged at 10:16:01.571----- 
+     --------Exception Message------------------
+     System.InvalidOperationException: MI Logging transaction codes not defined for 'ServiceName=getBankDetailsConsumer'.
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.GetAFServiceTransactionCode(IAFServiceAdaptor adaptor, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 312
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.CreateNew(Object sender, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 110
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateMainMiBeforeInvoke(Object sender) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 275
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateServiceInvokingLoggers(Object sender) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 485
+-----End of Error logged ---------------------------------
+-----Begin of Error logged at 10:16:01.712-----  for session egpvzdt5iehru3he2azndqe0
+     IP     :  10.12.164.17
+     --------Exception Message------------------
+     WrapMultipleInternalException: Exceptions in background transaction/error logging.
+ ---> 2 Inner exceptions found --- 
+ --- Inner exception 1--- 
+ ---> System.InvalidOperationException: MI Logging transaction codes not defined for 'ServiceName=getBankDetailsConsumer'.
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.GetAFServiceTransactionCode(IAFServiceAdaptor adaptor, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 312
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.CreateNew(Object sender, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 110
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateMainMiBeforeInvoke(Object sender) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 275
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateServiceInvokingLoggers(Object sender) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 485
+   --- End of inner exception stack trace ---
+ --- Inner exception 2--- 
+ ---> System.InvalidOperationException: MI Logging transaction codes not defined for 'ServiceName=getBankDetailsConsumer'.
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.GetAFServiceTransactionCode(IAFServiceAdaptor adaptor, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 312
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.CreateNew(Object sender, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 110
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateMainMiAfterInvoke(Object sender, Exception exception) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 288
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateServiceInvokeSuccessLoggers(Object sender) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 517
+   --- End of inner exception stack trace ---
+
+-----End of Error logged ---------------------------------
+-----Begin of Error logged at 10:16:39.541-----  for session jekqohsxmvrffw24pvf3tm22
+     IP     :  10.12.138.165
+     Service Name:  RetrieveHomeNBQuote
+     URL    :  http://10.14.76.230:9080/commfw/services/RetrieveHomeNBQuote?wsdl
+     --------Request------------------
+     <?xml version="1.0" encoding="utf-8"?><soapenv:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"><soapenv:Body><ns1:processWebService soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns1="commfw-soap-broker"><RetrieveHomeNBQuoteRq xmlns:dp="dp.norwich-union.com"><Exceed><SessionKey Val="jekqohsxmvrffw24pvf3tm22" /><WebService_Profile Val=" " /><WebService_Requester Val="NUDINTER" /><WebService_Switch Val="" /></Exceed><NUPolicyLocate><PolicyLocate_PolNumber Val="QTE300095016" /><PolicyLocate_PrimaryFunction Val="POL BY POLNBR" /><PolicyLocate_QuoteNumber Val="1" /><PolicyLocate_Switch Val="Q" /><PolicyLocate_TransactionSeqNbr Val="1" /></NUPolicyLocate></RetrieveHomeNBQuoteRq></ns1:processWebService></soapenv:Body></soapenv:Envelope>
+     --------Response------------------
+     <RetrieveHomeNBQuoteRs><Errors><BusinessError><BusinessError_FailedModule Val="PXUOPWL1" /><BusinessError_FailedTableOrFile Val="WEB_LOC_POL_FILTER_BPO" /><BusinessError_FailedColumnOrField Val="NO ROW FETCH" /><BusinessError_Code Val="UWS_POLNFD" /><BusinessError_Text Val="There are no matching records, please try again." /></BusinessError></Errors><Policy xmlns:dp="dp.norwich-union.com"><Policy_AccountsStopInd Val="" /><Policy_CancelRewriteId Val="" /><Policy_Commission Val="" /><Policy_CompanyChannel Val="" /><Policy_ConversionFlag Val="" /><Policy_ConversionType Val="" /><Policy_CurrentTermEndDate Val="" /><Policy_CurrentTermStartDate Val="" /><Policy_DateQuoted Val="" /><Policy_GiScore Val="" /><Policy_InceptionDate Val="" /><Policy_PreviousInsurer Val="" /><Policy_PreviousPaymentMethod Val="" /><Policy_ProposedPaymentMethod Val="" /><Policy_ProductCode Val="" /><Policy_ReasonAmended Val="" /><Policy_RenewalStopIndicator Val="" /><Policy_SchemeVariant Val="" /><Policy_Source Val="" /><Policy_SourceCode Val="" /><Policy_TransactionDate Val="" /><Policy_ProductSegment Val="" /><Policy_ProductRatingSegment Val="" /><dp:Policy_BranchNbr Val="" /><dp:Policy_CustomerCoverNoteDate Val="" /><dp:Policy_DealerCoverNoteDate Val="" /><dp:Policy_GuaranteeInd Val="" /><dp:Policy_DealerRef Val="" /><dp:Policy_Agency Val="" /><dp:Policy_PolicyNumber Val="" /><dp:Policy_QuoteSequenceNumber Val="" /><dp:Policy_TransactionSequenceNumber Val="" /><Policy_PrintInd Val="" /><dp:Policy_PrintDespatchCode Val="" /><Policy_IssueDate Val="" /></Policy></RetrieveHomeNBQuoteRs>
+-----End of Error logged ---------------------------------
+-----Begin of Error logged at 11:16:34.368-----  for session gj1nyvn4wcv3gux0knkm5yj4
+     IP     :  176.35.100.46
+     --------Exception Message------------------
+     System.NullReferenceException: Object reference not set to an instance of an object.
+   at Aviva.UKGI.QuoteAndBuy.Home.Web.Helpers.Mapper.MapYourQuoteViewModelToQuoteDataModel(QuoteDataModel quoteDataModel, YourQuoteViewModel viewModel) in e:\JPDSlave\workspace\UKGI.QB.Home.R412-REL\src\Aviva.UKGI.QuoteAndBuy.Home.Web\Helpers\Mapper.cs:line 2006
+   at Aviva.UKGI.QuoteAndBuy.Home.Web.Controllers.QuoteController.UpdateQuote(YourQuoteViewModel viewModel, Nullable`1 specifiedItemsUpdate, String removeSpecificiedId) in e:\JPDSlave\workspace\UKGI.QB.Home.R412-REL\src\Aviva.UKGI.QuoteAndBuy.Home.Web\Controllers\QuoteController.cs:line 1277
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+-----End of Error logged ---------------------------------
+-----Begin of Error logged at 12:16:23.306-----  for session cpqvrnd2gmebdb5jonwxbgfw
+     IP     :  194.176.105.3
+     --------Exception Message------------------
+     System.IO.IOException: The process cannot access the file 'E:\apps\NUXRFlatFiles\UKDIHomeTransaction_20121120.txt' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.AppendText(String path)
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.TransactionLogging.LogTransaction() in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\TransactionLogging.cs:line 118
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.Log() in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 355
+-----End of Error logged ---------------------------------
+-----Begin of Error logged at 13:39:40.364-----  for session 0i03qr12h1y5ihbk0yvhmbv2
+     IP     :  62.49.112.226
+     --------Exception Message------------------
+     System.IO.IOException: The process cannot access the file 'E:\apps\NUXRFlatFiles\UKDIHomeTransaction_20121120.txt' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.AppendText(String path)
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.TransactionLogging.LogTransaction() in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\TransactionLogging.cs:line 118
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.Log() in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 355
+-----End of Error logged ---------------------------------
+-----Begin of Error logged at 13:58:48.963-----  for session cnnobx2ky4chqyivfc14qjq1
+     IP     :  109.224.216.4
+     --------Exception Message------------------
+     System.IO.IOException: The process cannot access the file 'E:\apps\NUXRFlatFiles\UKDIHomeTransaction_20121120.txt' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.AppendText(String path)
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.TransactionLogging.LogTransaction() in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\TransactionLogging.cs:line 118
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.Log() in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 355
+-----End of Error logged ---------------------------------
+-----Begin of Error logged at 14:35:37.033-----  for session uksnv43woq3h1moi5z0soal5
+     IP     :  80.2.171.43
+     --------Exception Message------------------
+     Aviva.UKGI.Common.Exception.PostCodeException: Address not found in LookupAddress service- Post Code = 'CH66SZ' House =:''
+-----End of Error logged ---------------------------------
+-----Begin of Error logged at 14:58:09.057-----  for session uo5hk3s0obo404gi1bdnahwd
+     IP     :  109.224.216.4
+     --------Exception Message------------------
+     System.IO.IOException: The process cannot access the file 'E:\apps\NUXRFlatFiles\UKDIHomeTransaction_20121120.txt' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.AppendText(String path)
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.TransactionLogging.LogTransaction() in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\TransactionLogging.cs:line 118
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.Log() in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 355
+-----End of Error logged ---------------------------------
+-----Begin of Error logged at 15:04:55.673-----  for session e0uofk5b5ebqn24kwv3enlf4
+     IP     :  86.141.158.43
+     --------Exception Message------------------
+     Aviva.UKGI.Common.Exception.PostCodeException: PostCodeException = 'L405TH' House =:''
+-----End of Error logged ---------------------------------
+-----Begin of Error logged at 15:15:56.513-----  for session fyhyukhnkn4u3voowlqkbe3y
+     IP     :  90.195.130.53
+     Service Name:  ServiceName=insertCardDetailsConsumer
+     URL    :  ServiceName=insertCardDetailsConsumer;IpcName=\\.\pipe\afipcstub_af;IpcTimeout=20000;
+     --------Request------------------
+     <?xml version="1.0" encoding="utf-16"?><InsertCardDetailsRq xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="urn:aviva:uk:gi:dis:schema:insertcarddetails:rq:v01"><Utility><Transaction><Client><Id>EChannel#487446N48OPNDNUDINTE</Id></Client></Transaction></Utility><CreditCard><CardNumber>DELETED FOR SECURITY REASONS</CardNumber></CreditCard></InsertCardDetailsRq>
+     --------Response------------------
+     <NUError xmlns="urn:aviva:nu:dis:schema:entities:common:nuerror:v01" xmlns:ns1="urn:aviva:nu:dis:schema:entities:common:nuerror:v01"><ErrorID>-1</ErrorID><ErrorType>UNEXPECTED</ErrorType><ErrorDescription>VALIDATE_DETAILS : Check Digit of PAN is invalid</ErrorDescription><TimeStamp>2012-11-20T15:15:56Z</TimeStamp></NUError>
+-----End of Error logged ---------------------------------
+-----Begin of Error logged at 15:18:10.859-----  for session bmzkv4wwsxww2llq0hwlpdwz
+     IP     :  86.129.228.241
+     --------Exception Message------------------
+     System.NullReferenceException: Object reference not set to an instance of an object.
+   at Aviva.UKGI.QuoteAndBuy.Home.Web.Helpers.Mapper.MapYourQuoteViewModelToQuoteDataModel(QuoteDataModel quoteDataModel, YourQuoteViewModel viewModel) in e:\JPDSlave\workspace\UKGI.QB.Home.R412-REL\src\Aviva.UKGI.QuoteAndBuy.Home.Web\Helpers\Mapper.cs:line 2006
+   at Aviva.UKGI.QuoteAndBuy.Home.Web.Controllers.QuoteController.UpdateQuote(YourQuoteViewModel viewModel, Nullable`1 specifiedItemsUpdate, String removeSpecificiedId) in e:\JPDSlave\workspace\UKGI.QB.Home.R412-REL\src\Aviva.UKGI.QuoteAndBuy.Home.Web\Controllers\QuoteController.cs:line 1277
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+-----End of Error logged ---------------------------------
+-----Begin of Error logged at 15:18:39.329-----  for session zgczv2peubbax0lxgd245qar
+     IP     :  82.132.243.59
+     Service Name:  RetrieveHomeNBQuote
+     URL    :  http://10.14.76.230:9080/commfw/services/RetrieveHomeNBQuote?wsdl
+     --------Request------------------
+     <?xml version="1.0" encoding="utf-8"?><soapenv:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"><soapenv:Body><ns1:processWebService soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns1="commfw-soap-broker"><RetrieveHomeNBQuoteRq xmlns:dp="dp.norwich-union.com"><Exceed><SessionKey Val="zgczv2peubbax0lxgd245qar" /><WebService_Profile Val=" " /><WebService_Requester Val="NUDINTER" /><WebService_Switch Val="" /></Exceed><NUPolicyLocate><PolicyLocate_PolNumber Val="QTR058009642" /><PolicyLocate_PrimaryFunction Val="POL BY POLNBR" /><PolicyLocate_QuoteNumber Val="1" /><PolicyLocate_Switch Val="Q" /><PolicyLocate_TransactionSeqNbr Val="1" /></NUPolicyLocate></RetrieveHomeNBQuoteRq></ns1:processWebService></soapenv:Body></soapenv:Envelope>
+     --------Response------------------
+     <RetrieveHomeNBQuoteRs><Errors><BusinessError><BusinessError_FailedModule Val="PXUOPWL1" /><BusinessError_FailedTableOrFile Val="WEB_LOC_POL_FILTER_BPO" /><BusinessError_FailedColumnOrField Val="NO ROW FETCH" /><BusinessError_Code Val="UWS_POLNFD" /><BusinessError_Text Val="There are no matching records, please try again." /></BusinessError></Errors><Policy xmlns:dp="dp.norwich-union.com"><Policy_AccountsStopInd Val="" /><Policy_CancelRewriteId Val="" /><Policy_Commission Val="" /><Policy_CompanyChannel Val="" /><Policy_ConversionFlag Val="" /><Policy_ConversionType Val="" /><Policy_CurrentTermEndDate Val="" /><Policy_CurrentTermStartDate Val="" /><Policy_DateQuoted Val="" /><Policy_GiScore Val="" /><Policy_InceptionDate Val="" /><Policy_PreviousInsurer Val="" /><Policy_PreviousPaymentMethod Val="" /><Policy_ProposedPaymentMethod Val="" /><Policy_ProductCode Val="" /><Policy_ReasonAmended Val="" /><Policy_RenewalStopIndicator Val="" /><Policy_SchemeVariant Val="" /><Policy_Source Val="" /><Policy_SourceCode Val="" /><Policy_TransactionDate Val="" /><Policy_ProductSegment Val="" /><Policy_ProductRatingSegment Val="" /><dp:Policy_BranchNbr Val="" /><dp:Policy_CustomerCoverNoteDate Val="" /><dp:Policy_DealerCoverNoteDate Val="" /><dp:Policy_GuaranteeInd Val="" /><dp:Policy_DealerRef Val="" /><dp:Policy_Agency Val="" /><dp:Policy_PolicyNumber Val="" /><dp:Policy_QuoteSequenceNumber Val="" /><dp:Policy_TransactionSequenceNumber Val="" /><Policy_PrintInd Val="" /><dp:Policy_PrintDespatchCode Val="" /><Policy_IssueDate Val="" /></Policy></RetrieveHomeNBQuoteRs>
+-----End of Error logged ---------------------------------
+-----Begin of Error logged at 15:36:00.956-----  for session wgx0bama3afhzoiyk1ylkzdg
+     IP     :  77.98.146.19
+     Service Name:  RetrieveHomeNBQuote
+     URL    :  http://10.14.76.230:9080/commfw/services/RetrieveHomeNBQuote?wsdl
+     --------Request------------------
+     <?xml version="1.0" encoding="utf-8"?><soapenv:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"><soapenv:Body><ns1:processWebService soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns1="commfw-soap-broker"><RetrieveHomeNBQuoteRq xmlns:dp="dp.norwich-union.com"><Exceed><SessionKey Val="wgx0bama3afhzoiyk1ylkzdg" /><WebService_Profile Val=" " /><WebService_Requester Val="NUDINTER" /><WebService_Switch Val="" /></Exceed><NUPolicyLocate><PolicyLocate_PolNumber Val="QTEO58019896" /><PolicyLocate_PrimaryFunction Val="POL BY POLNBR" /><PolicyLocate_QuoteNumber Val="1" /><PolicyLocate_Switch Val="Q" /><PolicyLocate_TransactionSeqNbr Val="1" /></NUPolicyLocate></RetrieveHomeNBQuoteRq></ns1:processWebService></soapenv:Body></soapenv:Envelope>
+     --------Response------------------
+     <RetrieveHomeNBQuoteRs><Errors><BusinessError><BusinessError_FailedModule Val="PXUOPWL1" /><BusinessError_FailedTableOrFile Val="WEB_LOC_POL_FILTER_BPO" /><BusinessError_FailedColumnOrField Val="NO ROW FETCH" /><BusinessError_Code Val="UWS_POLNFD" /><BusinessError_Text Val="There are no matching records, please try again." /></BusinessError></Errors><Policy xmlns:dp="dp.norwich-union.com"><Policy_AccountsStopInd Val="" /><Policy_CancelRewriteId Val="" /><Policy_Commission Val="" /><Policy_CompanyChannel Val="" /><Policy_ConversionFlag Val="" /><Policy_ConversionType Val="" /><Policy_CurrentTermEndDate Val="" /><Policy_CurrentTermStartDate Val="" /><Policy_DateQuoted Val="" /><Policy_GiScore Val="" /><Policy_InceptionDate Val="" /><Policy_PreviousInsurer Val="" /><Policy_PreviousPaymentMethod Val="" /><Policy_ProposedPaymentMethod Val="" /><Policy_ProductCode Val="" /><Policy_ReasonAmended Val="" /><Policy_RenewalStopIndicator Val="" /><Policy_SchemeVariant Val="" /><Policy_Source Val="" /><Policy_SourceCode Val="" /><Policy_TransactionDate Val="" /><Policy_ProductSegment Val="" /><Policy_ProductRatingSegment Val="" /><dp:Policy_BranchNbr Val="" /><dp:Policy_CustomerCoverNoteDate Val="" /><dp:Policy_DealerCoverNoteDate Val="" /><dp:Policy_GuaranteeInd Val="" /><dp:Policy_DealerRef Val="" /><dp:Policy_Agency Val="" /><dp:Policy_PolicyNumber Val="" /><dp:Policy_QuoteSequenceNumber Val="" /><dp:Policy_TransactionSequenceNumber Val="" /><Policy_PrintInd Val="" /><dp:Policy_PrintDespatchCode Val="" /><Policy_IssueDate Val="" /></Policy></RetrieveHomeNBQuoteRs>
+-----End of Error logged ---------------------------------
+-----Begin of Error logged at 15:40:16.882----- 
+     --------Exception Message------------------
+     System.InvalidOperationException: MI Logging transaction codes not defined for 'ServiceName=getBankDetailsConsumer'.
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.GetAFServiceTransactionCode(IAFServiceAdaptor adaptor, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 312
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.CreateNew(Object sender, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 110
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateMainMiBeforeInvoke(Object sender) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 275
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateServiceInvokingLoggers(Object sender) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 485
+-----End of Error logged ---------------------------------
+-----Begin of Error logged at 15:40:17.038-----  for session 3addrgewmgdta1xrmatkrxw2
+     IP     :  92.0.58.135
+     --------Exception Message------------------
+     WrapMultipleInternalException: Exceptions in background transaction/error logging.
+ ---> 2 Inner exceptions found --- 
+ --- Inner exception 1--- 
+ ---> System.InvalidOperationException: MI Logging transaction codes not defined for 'ServiceName=getBankDetailsConsumer'.
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.GetAFServiceTransactionCode(IAFServiceAdaptor adaptor, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 312
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.CreateNew(Object sender, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 110
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateMainMiBeforeInvoke(Object sender) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 275
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateServiceInvokingLoggers(Object sender) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 485
+   --- End of inner exception stack trace ---
+ --- Inner exception 2--- 
+ ---> System.InvalidOperationException: MI Logging transaction codes not defined for 'ServiceName=getBankDetailsConsumer'.
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.GetAFServiceTransactionCode(IAFServiceAdaptor adaptor, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 312
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.CreateNew(Object sender, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 110
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateMainMiAfterInvoke(Object sender, Exception exception) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 288
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateServiceInvokeSuccessLoggers(Object sender) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 517
+   --- End of inner exception stack trace ---
+
+-----End of Error logged ---------------------------------
+-----Begin of Error logged at 15:53:11.208-----  for session 3zisntvz5532d1gz2dz5nzcs
+     IP     :  86.134.92.135
+     --------Exception Message------------------
+     System.IO.IOException: The process cannot access the file 'E:\apps\NUXRFlatFiles\UKDIHomeTransaction_20121120.txt' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.AppendText(String path)
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.TransactionLogging.LogTransaction() in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\TransactionLogging.cs:line 118
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.Log() in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 355
+-----End of Error logged ---------------------------------
+-----Begin of Error logged at 15:58:17.042-----  for session zxve4rygtk41csc1fy5ogmos
+     IP     :  92.5.231.227
+     --------Exception Message------------------
+     Aviva.UKGI.Common.Exception.PostCodeException: Address not found in LookupAddress service- Post Code = 'B21 6EP' House =:''
+-----End of Error logged ---------------------------------
+-----Begin of Error logged at 15:58:45.589-----  for session zxve4rygtk41csc1fy5ogmos
+     IP     :  92.5.231.227
+     --------Exception Message------------------
+     Aviva.UKGI.Common.Exception.PostCodeException: Address not found in LookupAddress service- Post Code = 'B12 6EP' House =:''
+-----End of Error logged ---------------------------------
+-----Begin of Error logged at 16:21:32.831-----  for session bzaadkwmno3ydl54a2twsmvs
+     IP     :  81.156.195.100
+     --------Exception Message------------------
+     System.IO.IOException: The process cannot access the file 'E:\apps\NUXRFlatFiles\UKDIHomeTransaction_20121120.txt' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.AppendText(String path)
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.TransactionLogging.LogTransaction() in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\TransactionLogging.cs:line 118
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.Log() in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 355
+-----End of Error logged ---------------------------------
+-----Begin of Error logged at 18:09:40.762-----  for session 4r4kmyowi1yetrcbj4twdyn1
+     IP     :  92.234.142.153
+     --------Exception Message------------------
+     System.IO.IOException: The process cannot access the file 'E:\apps\NUXRFlatFiles\UKDIHomeTransaction_20121120.txt' because it is being used by another process.
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamWriter.CreateFile(String path, Boolean append)
+   at System.IO.StreamWriter..ctor(String path, Boolean append, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamWriter..ctor(String path, Boolean append)
+   at System.IO.File.AppendText(String path)
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.TransactionLogging.LogTransaction() in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\TransactionLogging.cs:line 118
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.Log() in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 355
+-----End of Error logged ---------------------------------
+-----Begin of Error logged at 18:19:02.521-----  for session gx0b5szszp33gp0gspakpb5u
+     IP     :  89.154.81.219
+     --------Exception Message------------------
+     Aviva.UKGI.Common.Exception.PostCodeException: Address not found in LookupAddress service- Post Code = 'BD8 2BP' House =:''
+-----End of Error logged ---------------------------------
+-----Begin of Error logged at 18:45:59.187----- 
+     --------Exception Message------------------
+     System.InvalidOperationException: MI Logging transaction codes not defined for 'ServiceName=getBankDetailsConsumer'.
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.GetAFServiceTransactionCode(IAFServiceAdaptor adaptor, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 312
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.CreateNew(Object sender, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 110
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateMainMiBeforeInvoke(Object sender) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 275
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateServiceInvokingLoggers(Object sender) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 485
+-----End of Error logged ---------------------------------
+-----Begin of Error logged at 18:45:59.312-----  for session 1auds0z4oltbwsfqsjso5mur
+     IP     :  82.31.98.3
+     --------Exception Message------------------
+     WrapMultipleInternalException: Exceptions in background transaction/error logging.
+ ---> 2 Inner exceptions found --- 
+ --- Inner exception 1--- 
+ ---> System.InvalidOperationException: MI Logging transaction codes not defined for 'ServiceName=getBankDetailsConsumer'.
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.GetAFServiceTransactionCode(IAFServiceAdaptor adaptor, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 312
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.CreateNew(Object sender, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 110
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateMainMiBeforeInvoke(Object sender) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 275
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateServiceInvokingLoggers(Object sender) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 485
+   --- End of inner exception stack trace ---
+ --- Inner exception 2--- 
+ ---> System.InvalidOperationException: MI Logging transaction codes not defined for 'ServiceName=getBankDetailsConsumer'.
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.GetAFServiceTransactionCode(IAFServiceAdaptor adaptor, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 312
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.CreateNew(Object sender, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 110
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateMainMiAfterInvoke(Object sender, Exception exception) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 288
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateServiceInvokeSuccessLoggers(Object sender) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 517
+   --- End of inner exception stack trace ---
+
+-----End of Error logged ---------------------------------
+-----Begin of Error logged at 18:50:58.161-----  for session r3rbyjuphi3pgx2h4ulnsgol
+     IP     :  86.9.71.1
+     Service Name:  RetrieveHomeNBQuote
+     URL    :  http://10.14.76.230:9080/commfw/services/RetrieveHomeNBQuote?wsdl
+     --------Request------------------
+     <?xml version="1.0" encoding="utf-8"?><soapenv:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"><soapenv:Body><ns1:processWebService soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns1="commfw-soap-broker"><RetrieveHomeNBQuoteRq xmlns:dp="dp.norwich-union.com"><Exceed><SessionKey Val="r3rbyjuphi3pgx2h4ulnsgol" /><WebService_Profile Val=" " /><WebService_Requester Val="NUDINTER" /><WebService_Switch Val="" /></Exceed><NUPolicyLocate><PolicyLocate_PolNumber Val="QTE3000633366" /><PolicyLocate_PrimaryFunction Val="POL BY POLNBR" /><PolicyLocate_QuoteNumber Val="1" /><PolicyLocate_Switch Val="Q" /><PolicyLocate_TransactionSeqNbr Val="1" /></NUPolicyLocate></RetrieveHomeNBQuoteRq></ns1:processWebService></soapenv:Body></soapenv:Envelope>
+     --------Response------------------
+     <RetrieveHomeNBQuoteRs><Errors><BusinessError><BusinessError_FailedModule Val="PXUOPWL1" /><BusinessError_FailedTableOrFile Val="WEB_LOC_POL_FILTER_BPO" /><BusinessError_FailedColumnOrField Val="NO ROW FETCH" /><BusinessError_Code Val="UWS_POLNFD" /><BusinessError_Text Val="There are no matching records, please try again." /></BusinessError></Errors><Policy xmlns:dp="dp.norwich-union.com"><Policy_AccountsStopInd Val="" /><Policy_CancelRewriteId Val="" /><Policy_Commission Val="" /><Policy_CompanyChannel Val="" /><Policy_ConversionFlag Val="" /><Policy_ConversionType Val="" /><Policy_CurrentTermEndDate Val="" /><Policy_CurrentTermStartDate Val="" /><Policy_DateQuoted Val="" /><Policy_GiScore Val="" /><Policy_InceptionDate Val="" /><Policy_PreviousInsurer Val="" /><Policy_PreviousPaymentMethod Val="" /><Policy_ProposedPaymentMethod Val="" /><Policy_ProductCode Val="" /><Policy_ReasonAmended Val="" /><Policy_RenewalStopIndicator Val="" /><Policy_SchemeVariant Val="" /><Policy_Source Val="" /><Policy_SourceCode Val="" /><Policy_TransactionDate Val="" /><Policy_ProductSegment Val="" /><Policy_ProductRatingSegment Val="" /><dp:Policy_BranchNbr Val="" /><dp:Policy_CustomerCoverNoteDate Val="" /><dp:Policy_DealerCoverNoteDate Val="" /><dp:Policy_GuaranteeInd Val="" /><dp:Policy_DealerRef Val="" /><dp:Policy_Agency Val="" /><dp:Policy_PolicyNumber Val="" /><dp:Policy_QuoteSequenceNumber Val="" /><dp:Policy_TransactionSequenceNumber Val="" /><Policy_PrintInd Val="" /><dp:Policy_PrintDespatchCode Val="" /><Policy_IssueDate Val="" /></Policy></RetrieveHomeNBQuoteRs>
+-----End of Error logged ---------------------------------
+-----Begin of Error logged at 19:07:56.600-----  for session rbdosf1pnxkkagqpnn2lt21s
+     IP     :  86.135.121.205
+     --------Exception Message------------------
+     Aviva.UKGI.Common.Exception.PostCodeException: User Badly formatted 'PropertyToInsure.Postcode' = 'tf1 2 hq'
+-----End of Error logged ---------------------------------
+-----Begin of Error logged at 19:09:39.773-----  for session roy25ucbkomofjaajfwhbw4p
+     IP     :  2.100.181.193
+     Service Name:  RetrieveHomeNBQuote
+     URL    :  http://10.14.76.230:9080/commfw/services/RetrieveHomeNBQuote?wsdl
+     --------Request------------------
+     <?xml version="1.0" encoding="utf-8"?><soapenv:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"><soapenv:Body><ns1:processWebService soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns1="commfw-soap-broker"><RetrieveHomeNBQuoteRq xmlns:dp="dp.norwich-union.com"><Exceed><SessionKey Val="roy25ucbkomofjaajfwhbw4p" /><WebService_Profile Val=" " /><WebService_Requester Val="NUDINTER" /><WebService_Switch Val="" /></Exceed><NUPolicyLocate><PolicyLocate_PolNumber Val="MH0045354667" /><PolicyLocate_PrimaryFunction Val="POL BY POLNBR" /><PolicyLocate_QuoteNumber Val="1" /><PolicyLocate_Switch Val="Q" /><PolicyLocate_TransactionSeqNbr Val="1" /></NUPolicyLocate></RetrieveHomeNBQuoteRq></ns1:processWebService></soapenv:Body></soapenv:Envelope>
+     --------Response------------------
+     <RetrieveHomeNBQuoteRs><Errors><BusinessError><BusinessError_FailedModule Val="PXUOPWL1" /><BusinessError_FailedTableOrFile Val="WEB_LOC_POL_FILTER_BPO" /><BusinessError_FailedColumnOrField Val="NO ROW FETCH" /><BusinessError_Code Val="UWS_POLNFD" /><BusinessError_Text Val="There are no matching records, please try again." /></BusinessError></Errors><Policy xmlns:dp="dp.norwich-union.com"><Policy_AccountsStopInd Val="" /><Policy_CancelRewriteId Val="" /><Policy_Commission Val="" /><Policy_CompanyChannel Val="" /><Policy_ConversionFlag Val="" /><Policy_ConversionType Val="" /><Policy_CurrentTermEndDate Val="" /><Policy_CurrentTermStartDate Val="" /><Policy_DateQuoted Val="" /><Policy_GiScore Val="" /><Policy_InceptionDate Val="" /><Policy_PreviousInsurer Val="" /><Policy_PreviousPaymentMethod Val="" /><Policy_ProposedPaymentMethod Val="" /><Policy_ProductCode Val="" /><Policy_ReasonAmended Val="" /><Policy_RenewalStopIndicator Val="" /><Policy_SchemeVariant Val="" /><Policy_Source Val="" /><Policy_SourceCode Val="" /><Policy_TransactionDate Val="" /><Policy_ProductSegment Val="" /><Policy_ProductRatingSegment Val="" /><dp:Policy_BranchNbr Val="" /><dp:Policy_CustomerCoverNoteDate Val="" /><dp:Policy_DealerCoverNoteDate Val="" /><dp:Policy_GuaranteeInd Val="" /><dp:Policy_DealerRef Val="" /><dp:Policy_Agency Val="" /><dp:Policy_PolicyNumber Val="" /><dp:Policy_QuoteSequenceNumber Val="" /><dp:Policy_TransactionSequenceNumber Val="" /><Policy_PrintInd Val="" /><dp:Policy_PrintDespatchCode Val="" /><Policy_IssueDate Val="" /></Policy></RetrieveHomeNBQuoteRs>
+-----End of Error logged ---------------------------------
+-----Begin of Error logged at 19:17:12.687----- 
+     --------Exception Message------------------
+     System.InvalidOperationException: MI Logging transaction codes not defined for 'ServiceName=getBankDetailsConsumer'.
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.GetAFServiceTransactionCode(IAFServiceAdaptor adaptor, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 312
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.CreateNew(Object sender, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 110
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateMainMiBeforeInvoke(Object sender) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 275
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateServiceInvokingLoggers(Object sender) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 485
+-----End of Error logged ---------------------------------
+-----Begin of Error logged at 19:17:12.781-----  for session 25plyy3jhicrqyzjrbn5f3uq
+     IP     :  176.25.187.181
+     --------Exception Message------------------
+     WrapMultipleInternalException: Exceptions in background transaction/error logging.
+ ---> 2 Inner exceptions found --- 
+ --- Inner exception 1--- 
+ ---> System.InvalidOperationException: MI Logging transaction codes not defined for 'ServiceName=getBankDetailsConsumer'.
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.GetAFServiceTransactionCode(IAFServiceAdaptor adaptor, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 312
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.CreateNew(Object sender, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 110
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateMainMiBeforeInvoke(Object sender) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 275
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateServiceInvokingLoggers(Object sender) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 485
+   --- End of inner exception stack trace ---
+ --- Inner exception 2--- 
+ ---> System.InvalidOperationException: MI Logging transaction codes not defined for 'ServiceName=getBankDetailsConsumer'.
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.GetAFServiceTransactionCode(IAFServiceAdaptor adaptor, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 312
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.CreateNew(Object sender, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 110
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateMainMiAfterInvoke(Object sender, Exception exception) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 288
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateServiceInvokeSuccessLoggers(Object sender) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 517
+   --- End of inner exception stack trace ---
+
+-----End of Error logged ---------------------------------
+-----Begin of Error logged at 20:29:13.523-----  for session 3dn5fahl2kahzzu4jt22dzz5
+     IP     :  94.197.127.185
+     --------Exception Message------------------
+     System.NullReferenceException: Object reference not set to an instance of an object.
+   at Aviva.UKGI.QuoteAndBuy.Home.Tracking.TrackingInformationFor`1.get_APR() in e:\JPDSlave\workspace\UKGI.QB.Home.R412-REL\src\Aviva.UKGI.QuoteAndBuy.Home.Web\Models\Tracking\TrackingInformationFor.cs:line 578
+   at Aviva.UKGI.QuoteAndBuy.Home.Web.Models.Abstract.ThankYouViewModelBase..ctor(QuoteDataModel quoteModel) in e:\JPDSlave\workspace\UKGI.QB.Home.R412-REL\src\Aviva.UKGI.QuoteAndBuy.Home.Web\Models\Abstract\ThankYouViewModelBase.cs:line 45
+   at Aviva.UKGI.QuoteAndBuy.Home.Web.Controllers.QuoteController.ThankYou(String loginToken) in e:\JPDSlave\workspace\UKGI.QB.Home.R412-REL\src\Aviva.UKGI.QuoteAndBuy.Home.Web\Controllers\QuoteController.cs:line 1828
+   at lambda_method(Closure , ControllerBase , Object[] )
+   at System.Web.Mvc.ActionMethodDispatcher.Execute(ControllerBase controller, Object[] parameters)
+   at System.Web.Mvc.ReflectedActionDescriptor.Execute(ControllerContext controllerContext, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethod(ControllerContext controllerContext, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<InvokeActionMethodWithFilters>b__12()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodFilter(IActionFilter filter, ActionExecutingContext preContext, Func`1 continuation)
+   at System.Web.Mvc.ControllerActionInvoker.<>c__DisplayClass15.<>c__DisplayClass17.<InvokeActionMethodWithFilters>b__14()
+   at System.Web.Mvc.ControllerActionInvoker.InvokeActionMethodWithFilters(ControllerContext controllerContext, IList`1 filters, ActionDescriptor actionDescriptor, IDictionary`2 parameters)
+   at System.Web.Mvc.ControllerActionInvoker.InvokeAction(ControllerContext controllerContext, String actionName)
+-----End of Error logged ---------------------------------
+-----Begin of Error logged at 20:38:03.485-----  for session 21nngqtgh31ugi1qrfwd2bh5
+     IP     :  90.222.231.209
+     Service Name:  RetrieveHomeNBQuote
+     URL    :  http://10.14.76.230:9080/commfw/services/RetrieveHomeNBQuote?wsdl
+     --------Request------------------
+     <?xml version="1.0" encoding="utf-8"?><soapenv:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"><soapenv:Body><ns1:processWebService soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns1="commfw-soap-broker"><RetrieveHomeNBQuoteRq xmlns:dp="dp.norwich-union.com"><Exceed><SessionKey Val="21nngqtgh31ugi1qrfwd2bh5" /><WebService_Profile Val=" " /><WebService_Requester Val="NUDINTER" /><WebService_Switch Val="" /></Exceed><NUPolicyLocate><PolicyLocate_PolNumber Val="257.40" /><PolicyLocate_PrimaryFunction Val="POL BY POLNBR" /><PolicyLocate_QuoteNumber Val="1" /><PolicyLocate_Switch Val="Q" /><PolicyLocate_TransactionSeqNbr Val="1" /></NUPolicyLocate></RetrieveHomeNBQuoteRq></ns1:processWebService></soapenv:Body></soapenv:Envelope>
+     --------Response------------------
+     <RetrieveHomeNBQuoteRs><Errors><BusinessError><BusinessError_FailedModule Val="PXUOPWL1" /><BusinessError_FailedTableOrFile Val="WEB_LOC_POL_FILTER_BPO" /><BusinessError_FailedColumnOrField Val="NO ROW FETCH" /><BusinessError_Code Val="UWS_POLNFD" /><BusinessError_Text Val="There are no matching records, please try again." /></BusinessError></Errors><Policy xmlns:dp="dp.norwich-union.com"><Policy_AccountsStopInd Val="" /><Policy_CancelRewriteId Val="" /><Policy_Commission Val="" /><Policy_CompanyChannel Val="" /><Policy_ConversionFlag Val="" /><Policy_ConversionType Val="" /><Policy_CurrentTermEndDate Val="" /><Policy_CurrentTermStartDate Val="" /><Policy_DateQuoted Val="" /><Policy_GiScore Val="" /><Policy_InceptionDate Val="" /><Policy_PreviousInsurer Val="" /><Policy_PreviousPaymentMethod Val="" /><Policy_ProposedPaymentMethod Val="" /><Policy_ProductCode Val="" /><Policy_ReasonAmended Val="" /><Policy_RenewalStopIndicator Val="" /><Policy_SchemeVariant Val="" /><Policy_Source Val="" /><Policy_SourceCode Val="" /><Policy_TransactionDate Val="" /><Policy_ProductSegment Val="" /><Policy_ProductRatingSegment Val="" /><dp:Policy_BranchNbr Val="" /><dp:Policy_CustomerCoverNoteDate Val="" /><dp:Policy_DealerCoverNoteDate Val="" /><dp:Policy_GuaranteeInd Val="" /><dp:Policy_DealerRef Val="" /><dp:Policy_Agency Val="" /><dp:Policy_PolicyNumber Val="" /><dp:Policy_QuoteSequenceNumber Val="" /><dp:Policy_TransactionSequenceNumber Val="" /><Policy_PrintInd Val="" /><dp:Policy_PrintDespatchCode Val="" /><Policy_IssueDate Val="" /></Policy></RetrieveHomeNBQuoteRs>
+-----End of Error logged ---------------------------------
+-----Begin of Error logged at 21:26:05.469----- 
+     --------Exception Message------------------
+     System.InvalidOperationException: MI Logging transaction codes not defined for 'ServiceName=getBankDetailsConsumer'.
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.GetAFServiceTransactionCode(IAFServiceAdaptor adaptor, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 312
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.CreateNew(Object sender, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 110
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateMainMiBeforeInvoke(Object sender) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 275
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateServiceInvokingLoggers(Object sender) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 485
+-----End of Error logged ---------------------------------
+-----Begin of Error logged at 21:26:05.579-----  for session 2z2v050gjtb0ke0wwm154b3w
+     IP     :  90.200.165.161
+     --------Exception Message------------------
+     WrapMultipleInternalException: Exceptions in background transaction/error logging.
+ ---> 2 Inner exceptions found --- 
+ --- Inner exception 1--- 
+ ---> System.InvalidOperationException: MI Logging transaction codes not defined for 'ServiceName=getBankDetailsConsumer'.
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.GetAFServiceTransactionCode(IAFServiceAdaptor adaptor, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 312
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.CreateNew(Object sender, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 110
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateMainMiBeforeInvoke(Object sender) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 275
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateServiceInvokingLoggers(Object sender) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 485
+   --- End of inner exception stack trace ---
+ --- Inner exception 2--- 
+ ---> System.InvalidOperationException: MI Logging transaction codes not defined for 'ServiceName=getBankDetailsConsumer'.
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.GetAFServiceTransactionCode(IAFServiceAdaptor adaptor, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 312
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.MiLoggingBuilder.CreateNew(Object sender, Exception exception, Boolean beforeInvoke) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\MiLoggingBuilder.cs:line 110
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateMainMiAfterInvoke(Object sender, Exception exception) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 288
+   at Aviva.UKGI.Common.Utilities.TransactionLogging.LoggingFacade.CreateServiceInvokeSuccessLoggers(Object sender) in e:\JPDSlave\workspace\UKGI.Common-REL\src\Aviva.UKGI.Common.Utilities\TransactionLogging\LoggingFacade.cs:line 517
+   --- End of inner exception stack trace ---
+
+-----End of Error logged ---------------------------------
+-----Begin of Error logged at 22:30:31.550-----  for session ekk4d4snkqdcxfvxtzu0o505
+     IP     :  146.90.186.98
+     Service Name:  RetrieveHomeNBQuote
+     URL    :  http://10.14.76.230:9080/commfw/services/RetrieveHomeNBQuote?wsdl
+     --------Request------------------
+     <?xml version="1.0" encoding="utf-8"?><soapenv:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"><soapenv:Body><ns1:processWebService soapenv:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:ns1="commfw-soap-broker"><RetrieveHomeNBQuoteRq xmlns:dp="dp.norwich-union.com"><Exceed><SessionKey Val="ekk4d4snkqdcxfvxtzu0o505" /><WebService_Profile Val=" " /><WebService_Requester Val="NUDINTER" /><WebService_Switch Val="" /></Exceed><NUPolicyLocate><PolicyLocate_PolNumber Val="QTE300105638 " /><PolicyLocate_PrimaryFunction Val="POL BY POLNBR" /><PolicyLocate_QuoteNumber Val="1" /><PolicyLocate_Switch Val="Q" /><PolicyLocate_TransactionSeqNbr Val="1" /></NUPolicyLocate></RetrieveHomeNBQuoteRq></ns1:processWebService></soapenv:Body></soapenv:Envelope>
+     --------Response------------------
+     <RetrieveHomeNBQuoteRs><Errors><BusinessError><BusinessError_FailedModule Val="PXUOPWL1" /><BusinessError_FailedTableOrFile Val="WEB_LOC_POL_FILTER_BPO" /><BusinessError_FailedColumnOrField Val="NO ROW FETCH" /><BusinessError_Code Val="UWS_POLNFD" /><BusinessError_Text Val="There are no matching records, please try again." /></BusinessError></Errors><Policy xmlns:dp="dp.norwich-union.com"><Policy_AccountsStopInd Val="" /><Policy_CancelRewriteId Val="" /><Policy_Commission Val="" /><Policy_CompanyChannel Val="" /><Policy_ConversionFlag Val="" /><Policy_ConversionType Val="" /><Policy_CurrentTermEndDate Val="" /><Policy_CurrentTermStartDate Val="" /><Policy_DateQuoted Val="" /><Policy_GiScore Val="" /><Policy_InceptionDate Val="" /><Policy_PreviousInsurer Val="" /><Policy_PreviousPaymentMethod Val="" /><Policy_ProposedPaymentMethod Val="" /><Policy_ProductCode Val="" /><Policy_ReasonAmended Val="" /><Policy_RenewalStopIndicator Val="" /><Policy_SchemeVariant Val="" /><Policy_Source Val="" /><Policy_SourceCode Val="" /><Policy_TransactionDate Val="" /><Policy_ProductSegment Val="" /><Policy_ProductRatingSegment Val="" /><dp:Policy_BranchNbr Val="" /><dp:Policy_CustomerCoverNoteDate Val="" /><dp:Policy_DealerCoverNoteDate Val="" /><dp:Policy_GuaranteeInd Val="" /><dp:Policy_DealerRef Val="" /><dp:Policy_Agency Val="" /><dp:Policy_PolicyNumber Val="" /><dp:Policy_QuoteSequenceNumber Val="" /><dp:Policy_TransactionSequenceNumber Val="" /><Policy_PrintInd Val="" /><dp:Policy_PrintDespatchCode Val="" /><Policy_IssueDate Val="" /></Policy></RetrieveHomeNBQuoteRs>
+-----End of Error logged ---------------------------------

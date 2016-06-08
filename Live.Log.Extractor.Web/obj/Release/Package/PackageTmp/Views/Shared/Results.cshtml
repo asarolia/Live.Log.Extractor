@@ -1,0 +1,27 @@
+﻿@model Live.Log.Extractor.Web.Models.IndexModel
+@using Live.Log.Extractor.Domain
+<div id="ResultMessage">
+@if (IsPost)
+{
+        <h3>@Model.ResultMessage</h3>
+}
+
+@if (Model.Results != null && Model.Results.Count > 0 && !Model.ErrorOrAbortCheck)
+{
+    <div class="serviceLogs">
+            <span class="download" style="width:30%">@Html.ActionLink("Download log file", "Download", "Echannel", new { @class = "button bigrounded green" })</span>
+            <h4>EChannel Service Logs</h4>
+        <div id="serviceList">
+            @foreach (EchannelLog log in Model.Results)
+            {
+                <span class="eddtio">@log.ServiceName - @log.LogDate.ToShortDateString() - @log.TimeStamp - @log.SessionID</span>
+            }
+        </div>
+    </div>
+}
+else
+{ 
+    <span class="serviceLogs">No result found for your request.</span>
+}
+</div>           
+<p>@ViewBag.PerformanceMonitor</p>

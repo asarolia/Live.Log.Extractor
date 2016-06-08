@@ -1,0 +1,15 @@
+D:\Google Project\Live.Log.Extractor\Live.Log.Extractor.Domain\bin\Release\Live.Log.Extractor.Domain.dll
+D:\Google Project\Live.Log.Extractor\Live.Log.Extractor.Domain\bin\Release\Live.Log.Extractor.Domain.pdb
+D:\Google Project\Live.Log.Extractor\Live.Log.Extractor.Domain\obj\Release\ResolveAssemblyReference.cache
+D:\Google Project\Live.Log.Extractor\Live.Log.Extractor.Domain\obj\Release\Live.Log.Extractor.Domain.dll
+D:\Google Project\Live.Log.Extractor\Live.Log.Extractor.Domain\obj\Release\Live.Log.Extractor.Domain.pdb
+D:\Amit Sky\SkyDrive\Projects\Live.Log.Extractor\Live.Log.Extractor.Domain\bin\Release\Live.Log.Extractor.Domain.dll
+D:\Amit Sky\SkyDrive\Projects\Live.Log.Extractor\Live.Log.Extractor.Domain\bin\Release\Live.Log.Extractor.Domain.pdb
+D:\Amit Sky\SkyDrive\Projects\Live.Log.Extractor\Live.Log.Extractor.Domain\obj\Release\ResolveAssemblyReference.cache
+D:\Amit Sky\SkyDrive\Projects\Live.Log.Extractor\Live.Log.Extractor.Domain\obj\Release\Live.Log.Extractor.Domain.dll
+D:\Amit Sky\SkyDrive\Projects\Live.Log.Extractor\Live.Log.Extractor.Domain\obj\Release\Live.Log.Extractor.Domain.pdb
+C:\Live.Log.Extractor\Live.Log.Extractor.Domain\bin\Release\Live.Log.Extractor.Domain.dll
+C:\Live.Log.Extractor\Live.Log.Extractor.Domain\bin\Release\Live.Log.Extractor.Domain.pdb
+C:\Live.Log.Extractor\Live.Log.Extractor.Domain\obj\Release\ResolveAssemblyReference.cache
+C:\Live.Log.Extractor\Live.Log.Extractor.Domain\obj\Release\Live.Log.Extractor.Domain.dll
+C:\Live.Log.Extractor\Live.Log.Extractor.Domain\obj\Release\Live.Log.Extractor.Domain.pdb

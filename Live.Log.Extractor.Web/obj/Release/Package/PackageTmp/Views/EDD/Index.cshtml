@@ -1,0 +1,326 @@
+﻿@model Live.Log.Extractor.Web.Models.EDDViewModel
+
+@{
+    ViewBag.Title = "EDD Logs";
+}
+
+<h2>EDD Logs</h2>
+<div id="lightbox-panel" class="EDDlightbox-panel">
+    <p><a id="fancybox-close" href="#"></a></p>
+    <div id="eddMessageContainer" class="bluebox">
+        <h2>EDD Message with Table and Column Name</h2>
+        <div id="extraResults">
+            <div id="extraResultHeader" >
+                <span class="eddRow"><span class="eddMTC"><span class="eddMessage">Message</span><span class="eddTabCol"><span class="eddTable">Table Name</span><span class="eddColumn">Column Name</span></span></span></span>
+            </div>
+            <div id="extraResult">
+            </div>
+        </div>
+    </div>
+</div><!-- /lightbox-panel -->
+
+<div id="lightbox"> </div><!-- /lightbox -->
+@using (Html.BeginForm())
+{
+    <div class="bodyContainer">
+    <div class="fetchingDataImg" style="display:none"></div>
+    <div class="fetchingData" style="display:none"></div>
+    <div class="bluebox">
+    <div class="input-height">
+    <div><label>Search Criteria</label></div>
+    <div><span>@Html.RadioButtonFor(model => model.IsPolicyID, false) Policy number</span><br/>
+    <span>@Html.RadioButtonFor(model => model.IsPolicyID, true) Policy Id</span>
+    </div>
+    </div>
+    <div id="policyNumber" class="input">
+        @Html.LabelFor(model => model.PolicyNumber)
+        @Html.TextBoxFor(model => model.PolicyNumber)
+    </div>
+    <div id="policyID" class="input" style="display:none">
+        @Html.LabelFor(model => model.PolicyID)
+        @Html.TextBoxFor(model => model.PolicyID)
+    </div>
+    <div class="input">
+        @Html.LabelFor(model => model.ExceedRegion.CurrentRegion)
+        @Html.DropDownListFor(model => model.ExceedRegion.CurrentRegion, new SelectList(Model.ExceedRegion.RegionData, "RegionId", "RegionName"))
+    </div>
+    
+<div class="input">
+    <label>&nbsp; </label>
+    <a id="getEDDIORows" href="#" class="button bigrounded green">Get EDD Input/Output Rows</a>
+</div>
+</div>
+<div id="resultsContainer" style="display:none" class="bluebox">
+    <div class="accordian">
+        <span style="width:60%">EDD Time Stamp and Message Type</span>
+        <span class="download" style="width:30%">@Html.ActionLink("Download EDD Logs", "DownloadEDDMessage", "EDD", new { @class = "button medium green", id="download" })</span>
+        <span class="minus">-</span>
+    </div>
+    
+    <div id="results">
+    </div>
+    
+</div>
+<div id="messageContainer" style="display:none" class="bluebox">
+    <div class="accordian">
+        <span>EDD Message </span><span class="minus">-</span>
+    </div>
+    <div id="moreResults">
+    <textarea id="txtEDDMessage" cols="74" rows="20" wrap="on" ></textarea>
+    <div class="input">
+        <label>&nbsp; </label>
+        <a id="getExceedColumn" href="#" class="button bigrounded green">Get Exceed Column Mapping</a>
+    </div>
+    </div>
+</div>
+</div>
+}
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('ul#saturday').children('li:nth-child(3)').addClass('selectedMenu');
+        $('ul#saturday').children('li:nth-child(3)').children('a').css('color', '#FFF');
+        $("a#fancybox-close").live("click", function () {
+            $("#lightbox, #lightbox-panel").fadeOut(300);
+        });
+
+        $(".accordian").click(function () {
+            $(this).siblings().slideToggle('slow', function () { accordianShowHide($(this).siblings('.accordian')); bodyHeight(); });
+        });
+
+        $("#download").click(function (e) {
+            e.stopPropagation();
+        })
+
+        $(".download").css("float", "none");
+
+        $("input[name=IsPolicyID]").click(function () {
+            if ($(this).val() == "True") {
+                $("#policyNumber").hide('slow', function () {
+                    $("#policyID").show('slow');
+                });
+            }
+            else {
+                $("#policyID").hide('slow', function () {
+                    $("#policyNumber").show('slow');
+                });
+            }
+        });
+
+        $('#getEDDIORows').live("click", function (e) {
+            e.preventDefault();
+            if (!$.browser.msie) {
+                $('.fetchingData').css('background-color', '#000');
+            }
+            var IsPolicyID = $("input[name=IsPolicyID]:checked").val();
+            if ((IsPolicyID == "True" && $('#PolicyID').val() != '') || (IsPolicyID == "False" && $('#PolicyNumber').val() != '')) {
+                $('.fetchingData').height($(document).height());
+                $('.fetchingData').fadeIn('slow', function () {
+                    $('.fetchingDataImg').fadeIn();
+                    var input;
+                    var actionURL;
+
+                    if (IsPolicyID == "True") {
+                        input = $('#PolicyID').val();
+                        actionURL = '@Url.Action("GetEDDIORowsFromPolicID")';
+                    }
+                    else {
+                        input = $('#PolicyNumber').val();
+                        actionURL = '@Url.Action("GetEDDIORowsFromPolicyNumber")';
+                    }
+
+                    var inputData = {
+                        Input: input,
+                        Region: $('#ExceedRegion_CurrentRegion').val()
+                    };
+
+                    getAjaxData(inputData, actionURL);
+                });
+            }
+            else {
+                if (IsPolicyID == "True") {
+                    alert('Please enter policy id.');
+                }
+                else {
+                    alert('Please enter policy number.');
+                }
+            }
+        });
+
+        $('.eddtio').live("click", function (e) {
+            e.preventDefault();
+            var input = $(this).attr('id');
+            if (!$.browser.msie) {
+                $('.fetchingData').css('background-color', '#000');
+            }
+            $('.fetchingData').height($(document).height());
+            $('.fetchingData').fadeIn('slow', function () {
+                $('.fetchingDataImg').fadeIn();
+                var inputData =
+                {
+                    Input: input,
+                    Region: $('#ExceedRegion_CurrentRegion').val(),
+                    IsPolicyID: true
+                };
+                $.ajax(
+                {
+                    url: '@Url.Action("GetEDDMessage")',
+                    type: 'POST',
+                    data: JSON.stringify(inputData),
+                    dataType: 'json',
+                    processData: false,
+                    contentType: 'application/json; charset=utf-8',
+                    success: function (data) {
+                        if (data.SessionTimeout) {
+                            alert(data.SessionTimeout);
+                            $('.fetchingDataImg').fadeOut('slow', function () { $('.fetchingData').fadeOut(); window.location = '@Url.Action("Index", "Login")'; });
+                        }
+                        else if (data.dataNotFound) {
+                            $('#messageContainer').slideUp('slow', function () {
+                                $('#results').slideUp('slow', function () {
+                                    $('.fetchingDataImg').fadeOut('slow', function () {
+                                        $('.fetchingData').fadeOut('slow');
+                                        alert(data.dataNotFound);
+                                    });
+                                });
+                            });
+                        }
+                        else {
+                            $('#eddMessageContainer').slideUp('slow', function () {
+                                $('#messageContainer').slideUp('slow', function () {
+                                    $('#txtEDDMessage').val(data.EDDMessage);
+                                    $('#messageContainer').slideDown('slow', function () {
+                                        $('#moreResults').slideDown('slow', function () {
+                                            accordianShowHide('#messageContainer>.accordian'); bodyHeight(); $('.fetchingDataImg').fadeOut('slow', function () {
+                                                $('.fetchingData').fadeOut('slow');
+                                            });
+                                        })
+                                    });
+                                });
+                            });
+                        }
+                    }
+                }); // ajax call ends
+            }); // fadeIn ends
+        }); // Click ends
+
+        $('#getExceedColumn').live("click", function (e) {
+            e.preventDefault();
+            if (!$.browser.msie) {
+                $('.fetchingData').css('background-color', '#000');
+            }
+
+            $('.fetchingData').height($(document).height());
+            $('.fetchingData').fadeIn('slow', function () {
+                $('.fetchingDataImg').fadeIn();
+                $.ajax(
+                {
+                    url: '@Url.Action("GetEDDMessageColAndTab")',
+                    type: 'POST',
+                    processData: false,
+                    contentType: 'application/json; charset=utf-8',
+                    success: function (data) {
+                        if (data.SessionTimeout) {
+                            $('.fetchingDataImg').fadeOut('slow', function () {
+                                $('.fetchingData').fadeOut();
+                                alert(data.SessionTimeout)
+                                window.location = '@Url.Action("Index", "Login")';
+                            });
+                        }
+                        else if (data.dataNotFound) {
+                            $('.fetchingDataImg').fadeOut('slow', function () { $('.fetchingData').fadeOut(); alert(data.dataNotFound); });
+                        }
+                        else {
+                            $('#extraResult').html(data.EDDMessage);
+                            if (!$.browser.msie) {
+                                $('#lightbox').css('background-color', '#000');
+                                $('#lightbox').height($(document).height());
+                            }
+                            $("#lightbox, #lightbox-panel").fadeIn(300, function () { $('a#fancybox-close').show(); });
+
+                            $('.fetchingDataImg').fadeOut('slow', function () { $('.fetchingData').fadeOut(); });
+                        }
+                    }
+                });
+            });
+        });
+    });                                                                                   // ready ends
+
+    function getAjaxData(inputData, atcionURL) 
+    {
+        $.ajax({
+            url: atcionURL,
+            type: 'POST',
+            data: JSON.stringify(inputData),
+            dataType: 'json',
+            processData: false,
+            contentType: 'application/json; charset=utf-8',
+            success: function (data) {
+                if (data.SessionTimeout) {
+                    alert(data.SessionTimeout)
+                    window.location = '@Url.Action("Index", "Login")';
+                }
+                else if (data.dataNotFound) {
+                    $('#eddMessageContainer').slideUp('slow', function () {
+                        $('#messageContainer').slideUp('slow', function () {
+                            $('#resultsContainer').slideUp('slow', function () {
+                                $('.fetchingDataImg').fadeOut('slow', function () { $('.fetchingData').fadeOut(0, function () { alert(data.dataNotFound); }); });
+                            });
+                        });
+                    });
+                }
+                else {
+                    $('#eddMessageContainer').slideUp(100, function () {
+                        $('#messageContainer').slideUp(200, function () {
+                            $('#resultsContainer').slideUp(200, function () {
+                                var htmlTag = "";
+                                for (var i = 0; i < data.EDDRows.length; i++) {
+                                    var IOChar = (data.EDDRows[i].IO_CHAR == 'I') ? 'Input' : 'Output';
+                                    htmlTag += "<span class='eddtio' id='" + data.EDDRows[i].TRANSACTION_TIME + "-" + data.EDDRows[i].IO_CHAR + "'>" + data.EDDRows[i].TRANSACTION_TIME + "-" + data.EDDRows[i].MSG_ID  + "-" + IOChar + "</span>"
+                                }
+                                $('#results').html(htmlTag);
+                                if ($.browser.msie) {
+                                    $('.eddtio:nth-child(even)').css('background-color', '#ccc');
+                                }
+                                $('#resultsContainer').slideDown('slow', function () {
+                                    bodyHeight();
+                                    var totalHeight = 0;
+                                    $('#results').children('.eddtio').each(function () {
+                                        totalHeight = totalHeight + $(this).outerHeight();
+                                    });
+                                    if ($('#results').height() >= totalHeight) {
+                                        $('#results').height(totalHeight);
+                                    }
+                                    else { $('#results').height(300); }
+                                    $('.fetchingDataImg').fadeOut('slow', function () { $('.fetchingData').fadeOut('slow'); });
+                                });
+                            });
+                        });
+                    });
+                }
+            }
+        });
+    }
+    
+    
+    
+    function accordianShowHide(accordianDiv)
+    {
+        if ($(accordianDiv).siblings('div').is(":hidden")) {
+            $(accordianDiv).children('span:last-child').text('+');
+            $(accordianDiv).children('span:last-child').removeClass('minus');
+            $(accordianDiv).children('span:last-child').addClass('plus');
+        }
+        else {
+            $(accordianDiv).children('span:last-child').text('-');
+            $(accordianDiv).children('span:last-child').removeClass('plus');
+            $(accordianDiv).children('span:last-child').addClass('minus');
+        }
+    }
+
+    function bodyHeight()
+    {
+        var calHeight = $('.bodyContainer').height() + ($('#eddMessageContainer').is(":visible") ? $('#eddMessageContainer').height():0);
+        $('#content').height((calHeight > 824)? calHeight+45:824);
+    }
+</script>

@@ -1,0 +1,234 @@
+﻿@model Live.Log.Extractor.Web.Models.IndexModel
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<h2>@ViewBag.Message</h2>
+
+<div id="lightbox-panel" class="EDDlightbox-panel">
+    <p><a id="fancybox-close" href="#"></a></p>
+    <div class="bluebox">
+    <div id="requestBlock">
+        <div class="accordian" style="width:95%" >
+            <span>Request</span><span class="minus">-</span>
+        </div>
+        <div id="divRequest">
+            <textarea id="txtRequest" cols="105" rows="20" wrap="on" ></textarea>
+        </div>
+    </div>
+    <div>
+        <div class="accordian" style="width:95%" >
+            <span>Response</span><span class="plus">+</span>
+        </div>
+        <div id ="divResponse" style="display:none">
+            <textarea id="txtResponse" cols="105" rows="20" wrap="on" ></textarea>
+        </div>
+    </div>
+    </div>
+</div><!-- /lightbox-panel -->
+
+<div id="lightbox"> </div><!-- /lightbox -->
+
+@using (Ajax.BeginForm("Index_Search", new AjaxOptions { UpdateTargetId = "results", OnBegin = "OnBegin"}))
+{
+    <div class="bodyContainer">
+    <div class="fetchingDataImg" style="display:none"><input type="submit" name="Stop" id="Stop" value="Abort" class ="button bigrounded green"/></div>
+    <div class="fetchingData" style="display:none"></div>
+<div class="bluebox">
+<div class="input">
+    <span class="longLabel">
+        @Html.LabelFor(model => model.SearchText)
+    </span>
+    @Html.TextBoxFor(model => model.SearchText)
+    @Html.ValidationMessageFor(model => model.SearchText)
+    @Html.HiddenFor(model => model.ConnectionId)
+</div>
+<div class="input">
+    <span class="longLabel">
+    @Html.LabelFor(model => model.AppName)
+    </span>
+    @Html.DropDownListFor(model => model.AppName, new[] {
+new SelectListItem() {Text ="Motor" , Value="Motor"},
+new SelectListItem() {Text ="Home" , Value="Home"},
+new SelectListItem() {Text = "MyPolicy", Value ="MyPolicy"}
+})
+</div>
+<div class="input">
+    <span class="longLabel">
+        @Html.LabelFor(model => model.Date)
+    </span>
+    @Html.TextBoxFor(model => model.Date)
+    @Html.ValidationMessageFor(model => model.Date)
+</div>
+    @Html.HiddenFor(model => model.SearchEndText)
+    @Html.HiddenFor(m=>m.IsProduction)
+    @Html.HiddenFor(model => model.Sequential)
+    @Html.HiddenFor(model => model.SearchStartText)
+<div class="input">
+    <span class="longLabel">
+        <label>&nbsp; </label>
+    </span>    
+    <input type="submit" name="Find" id="Find" value="Search" class ="button bigrounded green"/>
+</div>
+</div>
+    <br />
+    <div id="messages" class="bluebox" style="display:none;">
+</div>
+    <div id="results" class="bluebox" style="display:none;">
+    @{ Html.RenderPartial("Results", Model); }
+    </div>
+    </div>
+}
+<link href="@Url.Content("~/Content/themes/base/jquery.ui.all.css")" rel="stylesheet" type="text/css" />
+<link href="@Url.Content("~/Content/themes/base/jquery.ui.datepicker.css")" rel="stylesheet"
+    type="text/css" />
+<script src="@Url.Content("~/signalr/hubs")" type="text/javascript"></script>
+
+<script type="text/jscript">
+    function OnBegin()
+    {
+        if ($('#SearchText').val() == "") 
+        {
+            alert('Please enter search text.');
+            return false;
+        }
+        else {
+            //$.connection.hub.start().done(function () {
+                if (!$.browser.msie) {
+                    $('.fetchingData').css('background-color', '#000');
+                }
+                $("#results").fadeOut(100, function () {
+                    $('.fetchingData').fadeIn(0, function () {
+                        $('.fetchingDataImg').fadeIn(0, function () { $('#messages').fadeIn(); });
+                    });
+                    $('#messages').html('');
+                    $('#ResultMessage').html('');
+                    $("#Stop").show();
+                    $("#Find").hide();
+                });
+            //});
+        }
+    }
+
+    $(document).ready(function () {
+        $("#Find").prop("disabled", true);
+        $('ul#saturday').children('li:nth-child(4)').addClass('selectedMenu');
+        $('ul#saturday').children('li:nth-child(4)').children('a').css('color', '#FFF');
+        $.connection.hub.start().done(function () {
+            $("#Find").prop("disabled", false);
+        });
+        $("#Date").datepicker({ dateFormat: 'dd/mm/yy',
+            minDate: '-31D',
+            maxDate: '-1D'
+        });
+
+        $("#Stop").hide();
+
+        $("#Stop").click(function () {
+            $('.fetchingDataImg').fadeOut('slow', function () {
+                $('.fetchingData').fadeOut();
+                $("#Find").show();
+                $("#Stop").hide();
+                //$.connection.hub.stop();
+            });
+        });
+
+        $('.eddtio').live("click", function (e) {
+            e.preventDefault();
+            if (!$.browser.msie) {
+                $('#lightbox').css('background-color', '#000');
+            }
+            $('#lightbox').height($(document).height());
+            var input = $(this).html().split('-');
+            var inputData =
+                {
+                    RequestName: input[0],
+                    LogDate: input[1],
+                    TimeStamp: input[2],
+                    SessionKey: input[3]
+                };
+            $.ajax(
+                {
+                    url: '@Url.Action("GetRequestResponse")',
+                    type: 'POST',
+                    data: JSON.stringify(inputData),
+                    dataType: 'json',
+                    processData: false,
+                    contentType: 'application/json; charset=utf-8',
+                    success: function (data) {
+                        if (data.SessionTimeout) {
+                            alert(data.SessionTimeout);
+                            $('.fetchingDataImg').fadeOut('slow', function () {
+                                $('.fetchingData').fadeOut();
+                                window.location = '@Url.Action("Index", "Login")';
+                            });
+                        }
+                        else if (data.dataNotFound) {
+                            $('#messageContainer').slideUp('slow', function () {
+                                $('#results').slideUp('slow', function () {
+                                    $('.fetchingDataImg').fadeOut('slow', function () {
+                                        $('.fetchingData').fadeOut();
+                                        alert(data.dataNotFound);
+                                    });
+                                });
+                            });
+                        }
+                        else {
+                            $('#txtRequest').val(data.RqMessage);
+                            $('#txtResponse').val(data.RsMessage);
+                            $('#lightbox').height($(document).height());
+                            $("#lightbox, #lightbox-panel").fadeIn(300, function () { $('a#fancybox-close').show(); });
+                        }
+                    }
+                }); // ajax call ends
+            //}); // fadeIn ends
+        }); // Click ends
+
+        $("a#fancybox-close").live("click", function () {
+            $("#lightbox, #lightbox-panel").fadeOut(300);
+        });
+
+        $(".accordian").click(function () {
+            $(this).siblings().slideToggle('slow', function () { accordianShowHide($(this).siblings('.accordian')); $(this).parent('div').siblings('div').children('div:last-child').slideUp('slow', function () { accordianShowHide($(this).siblings('.accordian')); }); });
+        });
+    });
+
+    function accordianShowHide(accordianDiv) {
+        if ($(accordianDiv).siblings('div').is(":hidden")) {
+            $(accordianDiv).children('span:last-child').text('+');
+            $(accordianDiv).children('span:last-child').removeClass('minus');
+            $(accordianDiv).children('span:last-child').addClass('plus');
+        }
+        else {
+            $(accordianDiv).children('span:last-child').text('-');
+            $(accordianDiv).children('span:last-child').removeClass('plus');
+            $(accordianDiv).children('span:last-child').addClass('minus');
+        }
+    }
+
+    $(function () {
+        var chat = $.connection.chat;
+
+        // Declare a function on the chat hub so the server can invoke it
+        chat.addMessage = function (connectionId, message) {
+            if (connectionId == '@Model.ConnectionId') {
+                $('#messages').append('<li>' + message + '</li>');
+                if (message == '@Model.ProcessCompleteMessage') {
+                    $("#messages").fadeOut(1000, function () {
+                        if ($.browser.msie) {
+                            $('.eddtio:nth-child(even)').css('background-color', '#ccc');
+                        }
+                        $('.fetchingDataImg').fadeOut(0, function () {
+                            $('.fetchingData').fadeOut(0, function () {
+                                $("#results").fadeIn();
+                                $("#Stop").hide();
+                                $("#Find").show();
+                            });
+                            //$.connection.hub.stop();
+                        });
+                    });
+                }
+            }
+        };
+    });
+</script>

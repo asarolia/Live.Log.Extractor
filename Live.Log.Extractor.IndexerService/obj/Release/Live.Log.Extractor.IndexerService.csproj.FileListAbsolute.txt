@@ -1,0 +1,34 @@
+D:\Google Project\Live.Log.Extractor\Live.Log.Extractor.IndexerService\bin\Release\Live.Log.Extractor.IndexerService.dll.config
+D:\Google Project\Live.Log.Extractor\Live.Log.Extractor.IndexerService\bin\Release\Live.Log.Extractor.IndexerService.dll
+D:\Google Project\Live.Log.Extractor\Live.Log.Extractor.IndexerService\bin\Release\Live.Log.Extractor.IndexerService.pdb
+D:\Google Project\Live.Log.Extractor\Live.Log.Extractor.IndexerService\bin\Release\Live.Log.Extractor.Domain.dll
+D:\Google Project\Live.Log.Extractor\Live.Log.Extractor.IndexerService\bin\Release\Lucene.Net.dll
+D:\Google Project\Live.Log.Extractor\Live.Log.Extractor.IndexerService\bin\Release\Live.Log.Extractor.Domain.pdb
+D:\Google Project\Live.Log.Extractor\Live.Log.Extractor.IndexerService\bin\Release\Lucene.Net.xml
+D:\Google Project\Live.Log.Extractor\Live.Log.Extractor.IndexerService\obj\Release\ResolveAssemblyReference.cache
+D:\Google Project\Live.Log.Extractor\Live.Log.Extractor.IndexerService\obj\Release\Live.Log.Extractor.IndexerService.dll
+D:\Google Project\Live.Log.Extractor\Live.Log.Extractor.IndexerService\obj\Release\Live.Log.Extractor.IndexerService.pdb
+D:\Amit Sky\SkyDrive\Projects\Live.Log.Extractor\Live.Log.Extractor.IndexerService\bin\Release\Live.Log.Extractor.IndexerService.dll.config
+D:\Amit Sky\SkyDrive\Projects\Live.Log.Extractor\Live.Log.Extractor.IndexerService\bin\Release\Live.Log.Extractor.IndexerService.dll
+D:\Amit Sky\SkyDrive\Projects\Live.Log.Extractor\Live.Log.Extractor.IndexerService\bin\Release\Live.Log.Extractor.IndexerService.pdb
+D:\Amit Sky\SkyDrive\Projects\Live.Log.Extractor\Live.Log.Extractor.IndexerService\bin\Release\Live.Log.Extractor.Domain.dll
+D:\Amit Sky\SkyDrive\Projects\Live.Log.Extractor\Live.Log.Extractor.IndexerService\bin\Release\Lucene.Net.dll
+D:\Amit Sky\SkyDrive\Projects\Live.Log.Extractor\Live.Log.Extractor.IndexerService\bin\Release\Live.Log.Extractor.Domain.pdb
+D:\Amit Sky\SkyDrive\Projects\Live.Log.Extractor\Live.Log.Extractor.IndexerService\bin\Release\Lucene.Net.xml
+D:\Amit Sky\SkyDrive\Projects\Live.Log.Extractor\Live.Log.Extractor.IndexerService\obj\Release\ResolveAssemblyReference.cache
+D:\Amit Sky\SkyDrive\Projects\Live.Log.Extractor\Live.Log.Extractor.IndexerService\obj\Release\Live.Log.Extractor.IndexerService.dll
+D:\Amit Sky\SkyDrive\Projects\Live.Log.Extractor\Live.Log.Extractor.IndexerService\obj\Release\Live.Log.Extractor.IndexerService.pdb
+D:\Amit Sky\SkyDrive\Projects\Live.Log.Extractor\Live.Log.Extractor.IndexerService\bin\Release\Ionic.Zip.dll
+D:\Amit Sky\SkyDrive\Projects\Live.Log.Extractor\Live.Log.Extractor.IndexerService\bin\Release\Ionic.Zip.xml
+C:\Live.Log.Extractor\Live.Log.Extractor.IndexerService\bin\Release\Live.Log.Extractor.IndexerService.dll.config
+C:\Live.Log.Extractor\Live.Log.Extractor.IndexerService\bin\Release\Live.Log.Extractor.IndexerService.dll
+C:\Live.Log.Extractor\Live.Log.Extractor.IndexerService\bin\Release\Live.Log.Extractor.IndexerService.pdb
+C:\Live.Log.Extractor\Live.Log.Extractor.IndexerService\bin\Release\Ionic.Zip.dll
+C:\Live.Log.Extractor\Live.Log.Extractor.IndexerService\bin\Release\Live.Log.Extractor.Domain.dll
+C:\Live.Log.Extractor\Live.Log.Extractor.IndexerService\bin\Release\Lucene.Net.dll
+C:\Live.Log.Extractor\Live.Log.Extractor.IndexerService\bin\Release\Live.Log.Extractor.Domain.pdb
+C:\Live.Log.Extractor\Live.Log.Extractor.IndexerService\bin\Release\Ionic.Zip.xml
+C:\Live.Log.Extractor\Live.Log.Extractor.IndexerService\bin\Release\Lucene.Net.xml
+C:\Live.Log.Extractor\Live.Log.Extractor.IndexerService\obj\Release\ResolveAssemblyReference.cache
+C:\Live.Log.Extractor\Live.Log.Extractor.IndexerService\obj\Release\Live.Log.Extractor.IndexerService.dll
+C:\Live.Log.Extractor\Live.Log.Extractor.IndexerService\obj\Release\Live.Log.Extractor.IndexerService.pdb

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Products>
+  <Product value="MyPolicy">
+    <IndexStartDate value="20/05/2012"/>
+    <LastIndexedDate value="" />
+    <RegularExpressions>
+      <RegularExpression value="for session [0-9a-z]{24}" />
+      <RegularExpression value="&lt;Client_ClientId Val=&quot;[A-Z0-9]{20}&quot;[\s]/&gt;"></RegularExpression>
+      <RegularExpression value="(MMO|MHO|HOM|MOT|CVH|CHH|CHM|HPI|MMV|CVM)[0-9]{9}" />
+    </RegularExpressions>
+  </Product>
+  <Product value="Motor">
+    <IndexStartDate value="20/05/2012"/>
+    <LastIndexedDate value="16/07/2012" />
+    <RegularExpressions>
+      <RegularExpression value="&lt;Client_ClientId Val=&quot;[A-Z0-9]{20}&quot;[\s]/&gt;"></RegularExpression>
+      <RegularExpression value="for session [0-9a-z]{24}" />
+      <RegularExpression value="(QTE|MMO|MMV)[0-9]{9}" />
+    </RegularExpressions>
+  </Product>
+  <Product value="Home">
+    <IndexStartDate value="15/01/2012" />
+    <LastIndexedDate value="16/07/2012" />
+    <RegularExpressions>
+      <RegularExpression value="&lt;Client_ClientId Val=&quot;[A-Z0-9]{20}&quot;[\s]/&gt;" />
+      <RegularExpression value="for session [0-9a-z]{24}" />
+      <RegularExpression value="(QTE|MHO)[0-9]{9}" />
+    </RegularExpressions>
+  </Product>
+</Products>

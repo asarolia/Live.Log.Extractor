@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Scripts/jquery-1.7.1.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.json2.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery-ui-1.8.20.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.signalR.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/modernizr-1.7.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.validate.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.unobtrusive-ajax.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/MicrosoftAjax.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/MicrosoftMvcAjax.js")" type="text/javascript"></script>
+    @RenderSection("barChart", false)
+</head>
+<body>
+    <div id="mainContainer">
+        <div id="header">
+            @{Html.RenderAction("Summary", "Cart");}
+            <div class="title">
+                <img src="@Url.Content("~/Content/images/logo.png")" alt="ApSelf"/> <span class="tagline">- Aviva Personal Systems Error Log Finder</span></div>
+        </div>
+        <div style="width: 100%; height: 8px; float: left;">
+            <div style="width: 39%; height: 8px; float: left; background-color: #FFCC66;">
+            </div>
+            <div style="width: 61%; height: 8px; float: left; background-color: #549635;">
+            </div>
+        </div>
+            <div id="categories">
+            <div class="menu">
+                <ul id="saturday">
+                    <li>@Html.ActionLink("Home", "Welcome", "Login")</li>
+                    <li>@Html.ActionLink("Exceed Logs", "Index", "Exceed")</li>
+                    <li>@Html.ActionLink("EDD Logs", "Index", "EDD")</li>
+                    <li>@Html.ActionLink("Echannel Logs", "Index", "Echannel")</li>
+                    <li>@Html.ActionLink("Print Logs", "Index", "Print")</li>
+                </ul>
+                </div>
+            </div>
+             <div id="mainContent">
+            <div id="content">
+                @RenderBody()
+            </div>
+        </div>
+		<!--div class="footer"><hr /><br />&copy; 2012 CSC </div-->
+    </div>
+</body>
+</html>
